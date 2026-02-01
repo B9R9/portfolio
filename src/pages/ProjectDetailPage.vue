@@ -50,10 +50,10 @@
             <aside class="lg:col-span-4 lg:sticky lg:top-24 space-y-6">
               <div class="space-y-3">
                 <h1 class="text-3xl md:text-4xl font-semibold tracking-tight">
-                  {{ project.title }}
+                  {{ projectTitle }}
                 </h1>
                 <p class="text-white/70 leading-relaxed">
-                  {{ project.tagline }}
+                  {{ projectTagline }}
                 </p>
               </div>
 
@@ -80,7 +80,7 @@
                     {{ $t('projectDetail.highlights') }}
                   </div>
                   <ul class="space-y-2 text-sm text-white/80 list-disc pl-5">
-                    <li v-for="h in project.highlights" :key="h">{{ h }}</li>
+                    <li v-for="h in projectHighlights" :key="h">{{ h }}</li>
                   </ul>
                 </div>
               </div>
@@ -137,13 +137,13 @@
 
                 <div class="grid sm:grid-cols-2 gap-4">
                   <figure
-                    v-for="src in project.imageUrl"
+                    v-for="src in project.imageUrl.slice(1, 4)"
                     :key="src"
                     class="rounded-lg overflow-hidden border border-white/10 bg-white/5"
                   >
                     <img
                       :src="src"
-                      :alt="$t('projectDetail.imageAlt', { title: project.title })"
+                      :alt="$t('projectDetail.imageAlt', { title: projectTitle })"
                       class="w-full h-auto block"
                       loading="lazy"
                     />
@@ -151,21 +151,21 @@
                 </div>
               </div>
 
-            <SectionBlock v-if="project.problem" :title="$t('projectDetail.sections.problem')">
-              <p class="text-white/70 leading-relaxed">{{ project.problem }}</p>
-            </SectionBlock>
+              <SectionBlock v-if="projectProblem" :title="$t('projectDetail.sections.problem')">
+                <p class="text-white/70 leading-relaxed">{{ projectProblem }}</p>
+              </SectionBlock>
 
-            <SectionBlock v-if="project.solution" :title="$t('projectDetail.sections.solution')">
-              <p class="text-white/70 leading-relaxed">{{ project.solution }}</p>
-            </SectionBlock>
+              <SectionBlock v-if="projectSolution" :title="$t('projectDetail.sections.solution')">
+                <p class="text-white/70 leading-relaxed">{{ projectSolution }}</p>
+              </SectionBlock>
 
-            <SectionBlock
-              v-if="project.description?.length"
-              :title="$t('projectDetail.sections.details')"
-            >
+              <SectionBlock
+                v-if="projectDescription.length"
+                :title="$t('projectDetail.sections.details')"
+              >
                 <div class="space-y-4">
                   <p
-                    v-for="(p, idx) in project.description"
+                    v-for="(p, idx) in projectDescription"
                     :key="idx"
                     class="text-white/70 leading-relaxed"
                   >
@@ -174,18 +174,21 @@
                 </div>
               </SectionBlock>
 
-            <SectionBlock
-              v-if="project.learnings?.length"
-              :title="$t('projectDetail.sections.learnings')"
-            >
+              <SectionBlock
+                v-if="projectLearnings.length"
+                :title="$t('projectDetail.sections.learnings')"
+              >
                 <ul class="space-y-2 text-white/70 list-disc pl-5">
-                  <li v-for="l in project.learnings" :key="l">{{ l }}</li>
+                  <li v-for="l in projectLearnings" :key="l">{{ l }}</li>
                 </ul>
               </SectionBlock>
 
-            <SectionBlock v-if="project.roadmap?.length" :title="$t('projectDetail.sections.roadmap')">
+              <SectionBlock
+                v-if="projectRoadmap.length"
+                :title="$t('projectDetail.sections.roadmap')"
+              >
                 <ul class="space-y-2 text-white/70 list-disc pl-5">
-                  <li v-for="r in project.roadmap" :key="r">{{ r }}</li>
+                  <li v-for="r in projectRoadmap" :key="r">{{ r }}</li>
                 </ul>
               </SectionBlock>
 
@@ -214,14 +217,68 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 import TagPill from '../components/ui/TagPill.vue'
 import SectionBlock from '../components/ui/SectionBlock.vue'
 import { PROJECTS } from '../content/projects'
 
 const route = useRoute()
+const { t, tm } = useI18n()
 const slug = computed(() => String(route.params.slug ?? ''))
 
 const project = computed(() => PROJECTS.find((p) => p.slug === slug.value))
+
+const projectTitle = computed(() =>
+  project.value?.titleKey ? t(project.value.titleKey) : (project.value?.title ?? ''),
+)
+
+const projectTagline = computed(() =>
+  project.value?.taglineKey ? t(project.value.taglineKey) : (project.value?.tagline ?? ''),
+)
+
+const projectProblem = computed(() =>
+  project.value?.problemKey ? t(project.value.problemKey) : (project.value?.problem ?? ''),
+)
+
+const projectSolution = computed(() =>
+  project.value?.solutionKey ? t(project.value.solutionKey) : (project.value?.solution ?? ''),
+)
+
+const projectHighlights = computed<string[]>(() => {
+  if (!project.value) return []
+  if (project.value.highlightsKey) {
+    const value = tm(project.value.highlightsKey)
+    return Array.isArray(value) ? value : []
+  }
+  return project.value.highlights ?? []
+})
+
+const projectDescription = computed<string[]>(() => {
+  if (!project.value) return []
+  if (project.value.descriptionKey) {
+    const value = tm(project.value.descriptionKey)
+    return Array.isArray(value) ? value : []
+  }
+  return project.value.description ?? []
+})
+
+const projectLearnings = computed<string[]>(() => {
+  if (!project.value) return []
+  if (project.value.learningsKey) {
+    const value = tm(project.value.learningsKey)
+    return Array.isArray(value) ? value : []
+  }
+  return project.value.learnings ?? []
+})
+
+const projectRoadmap = computed<string[]>(() => {
+  if (!project.value) return []
+  if (project.value.roadmapKey) {
+    const value = tm(project.value.roadmapKey)
+    return Array.isArray(value) ? value : []
+  }
+  return project.value.roadmap ?? []
+})
 
 const isReady = ref(false)
 

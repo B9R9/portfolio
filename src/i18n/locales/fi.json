@@ -113,6 +113,40 @@
     },
     "empty": "Yksikään projekti ei vastaa näitä suodattimia."
   },
+  "projectsData": {
+    "thought": {
+      "title": "Thought",
+      "tagline": "Yksityisyyttä korostava mobiilisovellus ajatusten tallentamiseen ja suojaamiseen",
+      "problem": "Useimmat muistiinpanosovellukset nojaavat pilvipalveluihin, tileihin ja analytiikkaan, mikä aiheuttaa kitkaa ja huolia käyttäjille, jotka haluavat vain kirjoittaa jotain nopeasti.",
+      "solution": "Thought on minimalistinen, local‑first‑mobiilisovellus, jonka avulla käyttäjät voivat tallentaa ajatuksia heti ja säilyttää ne turvallisesti laitteella ilman tilejä, pilvisynkkaa tai seurantaa.",
+      "highlights": [
+        "Suunniteltu ja julkaistu täysin toimiva mobiili‑POC",
+        "Local‑first‑arkkitehtuuri ilman pilviriippuvuutta",
+        "PIN‑lukitus ja fallback perus‑turvaa varten",
+        "Selkeä, häiriötön UX, joka korostaa nopeutta",
+        "Julkaistu Google Playhin (sisäinen testaus)"
+      ],
+      "description": [
+        "Thought on proof‑of‑concept‑mobiilisovellus, jolla tutkittiin minimalistista UX:ää, privacy‑first‑ajattelua ja paikallista tiedon säilytystä.",
+        "Sovellus mahdollistaa ajatusten nopean kirjaamisen ja hallinnan paikallisesti ilman tilejä, syötteitä tai ulkoisia palveluita.",
+        "Projekti toimii myös teknisenä ja tuotepainotteisena demonani portfoliossa, korostaen omistajuutta ideasta julkaisuun."
+      ],
+      "learnings": [
+        "Mobiili‑UX:n suunnittelu vahvalla fokusilla kognitiivisen kuorman vähentämiseen",
+        "Paikallisen persistenssin ja tietomallien hallinta Hivella",
+        "Sovelluksen turvallisuusvirrat (PIN‑lukitus, fallback, elinkaari)",
+        "Sovelluksen julkaisu ja testaus Google Play Consolen kautta",
+        "POC‑laajuuden tasapainottaminen tuotantovalmiiden valintojen kanssa"
+      ],
+      "roadmap": [
+        "Täysi paikallinen tiedon salaus",
+        "Haku ja suodatus",
+        "Tunniste- ja päiväkohtainen organisointi",
+        "Paikallinen vienti ja varmuuskopiointi",
+        "Valinnaiset edistyneet moduulit (AI‑avustus, äänisyöttö)"
+      ]
+    }
+  },
   "contact": {
     "title": "Yhteys",
     "subtitle": "Haluatko keskustella projektista, roolista tai yhteistyöstä?",

@@ -113,6 +113,40 @@
     },
     "empty": "Aucun projet ne correspond à ces filtres."
   },
+  "projectsData": {
+    "thought": {
+      "title": "Thought",
+      "tagline": "Une application mobile axée sur la confidentialité pour capturer et sécuriser ses pensées",
+      "problem": "La plupart des applications de prise de notes reposent sur le cloud, des comptes et des analytics, ce qui crée de la friction et des inquiétudes pour les utilisateurs qui veulent simplement noter quelque chose rapidement.",
+      "solution": "Thought est une application mobile minimaliste et local-first qui permet de saisir des pensées instantanément et de les stocker de manière sécurisée sur l’appareil, sans compte, sans synchronisation cloud ni suivi.",
+      "highlights": [
+        "Conçue et publiée en POC mobile pleinement fonctionnelle",
+        "Architecture local-first sans dépendance au cloud",
+        "Verrouillage par PIN avec fallback pour la sécurité de base",
+        "UX claire et sans distraction, axée sur la vitesse",
+        "Publiée sur Google Play (tests internes)"
+      ],
+      "description": [
+        "Thought est une application mobile proof‑of‑concept conçue pour explorer un UX minimaliste, une approche privacy‑first et la persistance locale.",
+        "L’application permet de noter rapidement des idées et de les gérer localement, sans comptes, fils d’actualité ni services externes.",
+        "Ce projet sert aussi de démonstration technique et produit pour mon portfolio, en illustrant une prise en charge de bout en bout, de l’idée à la sortie."
+      ],
+      "learnings": [
+        "Concevoir un UX mobile avec un fort focus sur la réduction de la charge cognitive",
+        "Gérer la persistance locale et les modèles de données avec Hive",
+        "Gérer les flux de sécurité de l’app (verrouillage PIN, fallback, cycle de vie)",
+        "Publier et tester une app via la Google Play Console",
+        "Équilibrer un scope de POC avec des choix proches de la production"
+      ],
+      "roadmap": [
+        "Chiffrement local complet des données",
+        "Recherche et filtres",
+        "Organisation par tags et par dates",
+        "Export et sauvegarde locale",
+        "Modules avancés optionnels (assistance IA, saisie vocale)"
+      ]
+    }
+  },
   "contact": {
     "title": "Contact",
     "subtitle": "Envie d’échanger sur un projet, un poste, ou une collaboration ?",

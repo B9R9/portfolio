@@ -113,6 +113,40 @@
     },
     "empty": "Inga projekt matchar dessa filter."
   },
+  "projectsData": {
+    "thought": {
+      "title": "Thought",
+      "tagline": "En integritetsfokuserad mobilapp för att fånga och säkra tankar",
+      "problem": "De flesta anteckningsappar förlitar sig på molntjänster, konton och analys, vilket skapar friktion och integritetsoro för användare som bara vill skriva ned något snabbt.",
+      "solution": "Thought är en minimalistisk, local‑first‑mobilapp som låter användare fånga tankar direkt och lagra dem säkert på enheten, utan konton, molnsynk eller spårning.",
+      "highlights": [
+        "Designad och levererad som en fullt fungerande mobil POC",
+        "Local‑first‑arkitektur utan beroende av molnet",
+        "PIN‑lås med fallback för grundläggande säkerhet",
+        "Ren, distraktionsfri UX med fokus på snabbhet",
+        "Publicerad på Google Play (intern testning)"
+      ],
+      "description": [
+        "Thought är en proof‑of‑concept‑mobilapp byggd för att utforska minimalistisk UX, privacy‑first‑design och lokal datalagring.",
+        "Appen låter användare snabbt skriva ned tankar och hantera dem lokalt utan konton, flöden eller externa tjänster.",
+        "Projektet fungerar också som en teknisk och produktinriktad demo för min portfolio, och visar ägarskap från idé till release."
+      ],
+      "learnings": [
+        "Design av mobil‑UX med starkt fokus på att minska kognitiv belastning",
+        "Hantering av lokal persistens och datamodeller med Hive",
+        "Hantering av app‑säkerhetsflöden (PIN‑lås, fallback, livscykel)",
+        "Lansering och testning av en app via Google Play Console",
+        "Balans mellan POC‑scope och produktionsnära beslut"
+      ],
+      "roadmap": [
+        "Full lokal kryptering av lagrad data",
+        "Sök och filtrering",
+        "Tagg- och datum‑baserad organisering",
+        "Lokal export och backup",
+        "Valfria avancerade moduler (AI‑assistent, röstinmatning)"
+      ]
+    }
+  },
   "contact": {
     "title": "Kontakt",
     "subtitle": "Vill du prata om ett projekt, en roll eller ett samarbete?",

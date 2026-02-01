@@ -1,21 +1,29 @@
 export type Project = {
   slug: string
   title: string
+  titleKey?: string
   tagline: string
+  taglineKey?: string
   type: 'work' | 'personal' | 'ongoing'
 
   tags: string[]
   stack: string[]
 
   problem?: string
+  problemKey?: string
   solution?: string
+  solutionKey?: string
 
   highlights: string[]
+  highlightsKey?: string
 
   description?: string[]
+  descriptionKey?: string
   learnings?: string[]
+  learningsKey?: string
 
   roadmap?: string[]
+  roadmapKey?: string
   imageUrl?: string[]
 
   repoUrl?: string
@@ -61,60 +69,68 @@ export const PROJECTS: Project[] = [
     downloadUrl: '',
   },
   {
-    slug: 'thought-notes-app',
+    slug: 'thought',
     title: 'Thought',
-    tagline: 'Capture rapide de pensées, verrouillée et chiffrée localement.',
+    titleKey: 'projectsData.thought.title',
+    tagline: 'A privacy-first mobile app to capture and secure thoughts',
+    taglineKey: 'projectsData.thought.tagline',
     type: 'personal',
 
-    tags: ['mobile', 'productivity', 'privacy-first', 'offline-first'],
-    stack: ['Flutter', 'Dart', 'Hive', 'Local authentication'],
+    tags: ['Mobile', 'Privacy-first', 'Offline', 'POC', 'Flutter'],
+    stack: ['Flutter', 'Dart', 'Hive'],
 
     problem:
-      'Noter une pensée sur le moment est souvent trop lent, et les apps classiques n’offrent pas toujours une vraie confidentialité (stockage cloud par défaut, friction, collecte).',
+      'Most note-taking apps rely on cloud services, accounts, and analytics, creating friction and privacy concerns for users who simply want to write something down quickly.',
+    problemKey: 'projectsData.thought.problem',
+
     solution:
-      'Une app minimaliste pour capturer une pensée en 1 geste, avec verrouillage (PIN + biométrie si dispo) et stockage chiffré localement, sans compte.',
+      'Thought is a minimalist, local-first mobile app that allows users to capture thoughts instantly and store them securely on their device, without accounts, cloud sync, or tracking.',
+    solutionKey: 'projectsData.thought.solution',
 
     highlights: [
-      'Ajout instantané de pensées + liste chronologique',
-      'Édition + vue détaillée',
-      'Suppression rapide (interaction pensée)',
-      'Bottom sheet pour naviguer par date',
-      'Écran d’introduction / onboarding réaffichable',
-      'Settings: langue, reset, changement PIN',
-      'Chiffrement du stockage local (Hive)',
+      'Designed and shipped a fully functional mobile POC',
+      'Local-first architecture with no cloud dependency',
+      'PIN-based lock with fallback for basic security',
+      'Clean, distraction-free UX focused on speed',
+      'Published to Google Play (internal testing)',
     ],
+    highlightsKey: 'projectsData.thought.highlights',
 
     description: [
-      'Thought est un POC orienté “privacy-first” : tout reste sur l’appareil.',
-      'L’expérience est volontairement minimaliste : écrire, retrouver, éditer — sans distraction.',
-      'La sécurité n’est pas une option : verrouillage dès l’ouverture et données locales chiffrées.',
+      'Thought is a proof-of-concept mobile application built to explore minimalist UX, privacy-first design, and local data persistence.',
+      'The app allows users to quickly write down thoughts and manage them locally without accounts, feeds, or external services.',
+      'This project also serves as a technical and product-oriented demo for my portfolio, highlighting end-to-end ownership from idea to release.',
     ],
+    descriptionKey: 'projectsData.thought.description',
 
     learnings: [
-      'Architecture Flutter simple et maintenable (models/widgets/screens)',
-      'Gestion du stockage local avec Hive (migrations, perf, structure des données)',
-      'UX mobile: interactions rapides, focus clavier, patterns de suppression',
-      'Onboarding + réglages multilingues basés sur la langue du téléphone',
+      'Designing mobile UX with a strong focus on reducing cognitive load',
+      'Managing local persistence and data models with Hive',
+      'Handling app security flows (PIN lock, fallback, lifecycle)',
+      'Shipping and testing an app through the Google Play Console',
+      'Balancing POC scope with production-ready decisions',
     ],
+    learningsKey: 'projectsData.thought.learnings',
 
     roadmap: [
-      'Recherche + filtres (tags, dates, mots-clés)',
-      'Export/backup chiffré (fichier local)',
-      'Support pièces jointes (image / audio) en option',
-      'Assistant IA local (résumé / classification) si activé',
-      'Widgets / raccourcis (quick capture)',
+      'Full local encryption of stored data',
+      'Search and filtering capabilities',
+      'Tag-based and date-based organization',
+      'Local export and backup',
+      'Optional advanced modules (AI assistance, voice input)',
     ],
+    roadmapKey: 'projectsData.thought.roadmap',
 
     imageUrl: [
-      '/projects/thought/cover.png',
-      '/projects/thought/screen-home.png',
-      '/projects/thought/screen-detail.png',
-      '/projects/thought/screen-settings.png',
+      '/images/projects/thought/logo.png',
+      '/images/projects/thought/list.png',
+      '/images/projects/thought/settings.png',
     ],
 
-    repoUrl: 'https://github.com/<your-username>/thought',
-    demoUrl: 'https://<your-demo-url>',
-    downloadUrl: 'https://play.google.com/store/apps/details?id=<your.package.name>',
+    repoUrl: 'https://github.com/B9R9/Thoughts?tab=readme-ov-file#readme',
+    demoUrl: undefined,
+
+    downloadUrl: 'https://github.com/B9R9/Thoughts/archive/refs/heads/main.zip',
   },
   {
     slug: 'hivemind-rag-assistant',

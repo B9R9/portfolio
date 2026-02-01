@@ -114,6 +114,40 @@
     },
     "empty": "No projects match these filters."
   },
+  "projectsData": {
+    "thought": {
+      "title": "Thought",
+      "tagline": "A privacy-first mobile app to capture and secure thoughts",
+      "problem": "Most note-taking apps rely on cloud services, accounts, and analytics, creating friction and privacy concerns for users who simply want to write something down quickly.",
+      "solution": "Thought is a minimalist, local-first mobile app that allows users to capture thoughts instantly and store them securely on their device, without accounts, cloud sync, or tracking.",
+      "highlights": [
+        "Designed and shipped a fully functional mobile POC",
+        "Local-first architecture with no cloud dependency",
+        "PIN-based lock with fallback for basic security",
+        "Clean, distraction-free UX focused on speed",
+        "Published to Google Play (internal testing)"
+      ],
+      "description": [
+        "Thought is a proof-of-concept mobile application built to explore minimalist UX, privacy-first design, and local data persistence.",
+        "The app allows users to quickly write down thoughts and manage them locally without accounts, feeds, or external services.",
+        "This project also serves as a technical and product-oriented demo for my portfolio, highlighting end-to-end ownership from idea to release."
+      ],
+      "learnings": [
+        "Designing mobile UX with a strong focus on reducing cognitive load",
+        "Managing local persistence and data models with Hive",
+        "Handling app security flows (PIN lock, fallback, lifecycle)",
+        "Shipping and testing an app through the Google Play Console",
+        "Balancing POC scope with production-ready decisions"
+      ],
+      "roadmap": [
+        "Full local encryption of stored data",
+        "Search and filtering capabilities",
+        "Tag-based and date-based organization",
+        "Local export and backup",
+        "Optional advanced modules (AI assistance, voice input)"
+      ]
+    }
+  },
   "contact": {
     "title": "Contact",
     "subtitle": "Want to discuss a project, a role, or a collaboration?",

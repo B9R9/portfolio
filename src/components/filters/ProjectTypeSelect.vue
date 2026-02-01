@@ -8,7 +8,12 @@
         <select
           class="w-full appearance-none bg-transparent pr-6 text-white/80 focus:outline-none"
           :value="modelValue"
-          @change="$emit('update:modelValue', ($event.target as HTMLSelectElement).value)"
+          @change="
+            $emit(
+              'update:modelValue',
+              ($event.target as HTMLSelectElement).value as 'all' | 'work' | 'personal',
+            )
+          "
         >
           <option value="all">{{ $t('projects.filter.all') }}</option>
           <option value="work">{{ $t('projects.filter.work') }}</option>

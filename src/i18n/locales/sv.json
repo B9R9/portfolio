@@ -145,6 +145,39 @@
         "Lokal export och backup",
         "Valfria avancerade moduler (AI‑assistent, röstinmatning)"
       ]
+    },
+    "hivemindLlmPlatform": {
+      "title": "HiveMind",
+      "tagline": "En modulär LLM‑plattform med vektorsökning och metadatadriven resonering",
+      "problem": "De flesta LLM‑baserade applikationer saknar struktur, kontroll och skalbarhet. Prompt‑only‑angreppssätt gör det svårt att förfina resultat, tillämpa filtreringslogik eller utvecklas mot mer komplexa resonemangssystem.",
+      "solution": "HiveMind introducerar en modulär backend‑arkitektur där användarfrågor omvandlas till embeddings, jämförs mot ett vektor‑store, förfinas via metadata‑affinitet och därefter omformuleras innan de skickas till LLM:et. Detta möjliggör precisa, förklarbara och utbyggbara LLM‑arbetsflöden.",
+      "highlights": [
+        "Vektorbaserad semantisk sökning kombinerad med metadatafiltrering",
+        "Tydlig separation mellan embedding-, retrieval- och genereringslager",
+        "Modulär serviceorienterad backend‑arkitektur (icke‑microservice)",
+        "Utformad för utbyggbarhet och experiment med LLM‑beteende",
+        "Frontend planerad för observabilitet och felsökning av interaktionsflöden"
+      ],
+      "description": [
+        "HiveMind är en experimentell LLM‑plattform med fokus på kontroll, struktur och vidareutveckling.",
+        "I stället för att prompta en språkmodell direkt, embedas användarinput och matchas mot en vektorstore berikad med metadata.",
+        "Systemet utvärderar semantisk affinitet, tillämpar kontextfilter och omformulerar frågan för att guida LLM:et mot mer relevanta och konsekventa svar.",
+        "Backend är implementerad med FastAPI och organiserad i interna tjänster för att möjliggöra skalning utan för tidig microservice‑komplexitet."
+      ],
+      "learnings": [
+        "Design av LLM‑system bortom prompt engineering",
+        "Avvägningar mellan monoliter, modulära tjänster och microservices",
+        "Praktisk användning av vektordatabaser och embedding‑strategier",
+        "Betydelsen av metadata för relevans och kontroll i RAG‑system",
+        "Arkitektur för AI‑system med framtida observabilitet i åtanke"
+      ],
+      "roadmap": [
+        "Färdigställ vektorstore och metadataschema",
+        "Implementera interna tjänstegränser och gränssnitt",
+        "Lägg till utvärderings- och poängmekanismer för retrieval‑kvalitet",
+        "Bygg ett frontend‑gränssnitt för query‑inspektion och debug",
+        "Experimentera med flera LLM‑leverantörer och lokala modeller"
+      ]
     }
   },
   "contact": {

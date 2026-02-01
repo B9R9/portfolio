@@ -145,6 +145,39 @@
         "Paikallinen vienti ja varmuuskopiointi",
         "Valinnaiset edistyneet moduulit (AI‑avustus, äänisyöttö)"
       ]
+    },
+    "hivemindLlmPlatform": {
+      "title": "HiveMind",
+      "tagline": "Modulaarinen LLM‑alusta, jossa on vektorihaku ja metadatoihin perustuva päättely",
+      "problem": "Useimmilta LLM‑pohjaisilta sovelluksilta puuttuu rakenne, hallittavuus ja skaalautuvuus. Pelkät prompt‑lähestymistavat vaikeuttavat tulosten hienosäätöä, suodatuslogiikan soveltamista ja kehittymistä kohti monimutkaisempia päättelyjärjestelmiä.",
+      "solution": "HiveMind esittelee modulaarisen backend‑arkkitehtuurin, jossa käyttäjän kyselyt muunnetaan embeddauksiksi, verrataan vektorivarastoon, tarkennetaan metadatojen avulla ja reformuloidaan ennen LLM:lle lähettämistä. Tämä mahdollistaa täsmälliset, selitettävät ja laajennettavat LLM‑työnkulut.",
+      "highlights": [
+        "Vektoripohjainen semanttinen haku yhdistettynä metadatasuodatukseen",
+        "Selkeä jako embedding-, retrieval- ja generointikerrosten välillä",
+        "Modulaarinen palvelukeskeinen backend‑arkkitehtuuri (ei mikroservicejä)",
+        "Suunniteltu laajennettavuutta ja LLM‑käyttäytymisen kokeilua varten",
+        "Frontend suunnitteilla observointiin ja vuorovaikutusvirran debugiin"
+      ],
+      "description": [
+        "HiveMind on kokeellinen LLM‑alusta, joka keskittyy hallintaan, rakenteeseen ja kehitettävyyteen.",
+        "Sen sijaan että mallia promptataan suoraan, käyttäjän syötteet embedataan ja verrataan metadatalla rikastettuun vektorivarastoon.",
+        "Järjestelmä arvioi semanttisen affiniteetin, soveltaa kontekstisuodattimia ja reformuloi kyselyn ohjatakseen LLM:ää kohti relevantimpia ja johdonmukaisempia vastauksia.",
+        "Backend on toteutettu FastAPI:lla ja organisoitu sisäisiin palveluihin, jotta voidaan skaalata ilman ennenaikaista mikroservice‑kompleksisuutta."
+      ],
+      "learnings": [
+        "LLM‑järjestelmien suunnittelu prompt‑engineeringin tuolla puolen",
+        "Kompromissit monoliittien, modulaaristen palveluiden ja mikroservicejen välillä",
+        "Vektorikantojen ja embedding‑strategioiden käytännön hyödyntäminen",
+        "Metadatan merkitys relevanssille ja kontrollille RAG‑järjestelmissä",
+        "AI‑järjestelmien arkkitehtuuri observointia silmällä pitäen"
+      ],
+      "roadmap": [
+        "Viimeistellään vektorivarasto ja metadataskaema",
+        "Toteutetaan sisäiset palvelurajat ja rajapinnat",
+        "Lisätään evaluointi- ja skorausmekanismit haun laadulle",
+        "Rakennetaan frontend‑käyttöliittymä kyselyjen tarkasteluun ja debugiin",
+        "Kokeillaan useita LLM‑palveluntarjoajia ja paikallisia malleja"
+      ]
     }
   },
   "contact": {

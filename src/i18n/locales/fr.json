@@ -145,6 +145,39 @@
         "Export et sauvegarde locale",
         "Modules avancés optionnels (assistance IA, saisie vocale)"
       ]
+    },
+    "hivemindLlmPlatform": {
+      "title": "HiveMind",
+      "tagline": "Une plateforme LLM modulaire avec recherche vectorielle et raisonnement guidé par les métadonnées",
+      "problem": "La plupart des applications basées sur des LLM manquent de structure, de contrôle et d’évolutivité. Les approches « prompt‑only » rendent difficile le raffinement des résultats, l’application de règles de filtrage, ou l’évolution vers des systèmes de raisonnement plus complexes.",
+      "solution": "HiveMind introduit une architecture backend modulaire où les requêtes utilisateur sont transformées en embeddings, comparées à un store vectoriel, affinées via l’affinité de métadonnées, puis reformulées avant d’être envoyées au LLM. Cela permet des workflows LLM précis, explicables et extensibles.",
+      "highlights": [
+        "Recherche sémantique vectorielle combinée au filtrage par métadonnées",
+        "Séparation claire entre les couches d’embedding, de retrieval et de génération",
+        "Architecture backend modulaire orientée services (sans microservices prématurés)",
+        "Conçu pour l’extensibilité et l’expérimentation du comportement LLM",
+        "Frontend prévu pour l’observabilité et le debug du flux d’interaction"
+      ],
+      "description": [
+        "HiveMind est une plateforme LLM expérimentale axée sur le contrôle, la structure et l’évolutivité.",
+        "Au lieu de prompt directement un modèle, les entrées sont embedées et comparées à un store vectoriel enrichi de métadonnées.",
+        "Le système évalue l’affinité sémantique, applique des filtres contextuels, et reformule la requête pour guider le LLM vers des réponses plus pertinentes et cohérentes.",
+        "Le backend est implémenté avec FastAPI et organisé en services internes pour permettre une montée en charge sans complexité microservice prématurée."
+      ],
+      "learnings": [
+        "Concevoir des systèmes LLM au‑delà du prompt engineering",
+        "Arbitrages entre monolithes, services modulaires et microservices",
+        "Usage pratique des bases vectorielles et des stratégies d’embedding",
+        "Importance des métadonnées pour la pertinence et le contrôle en RAG",
+        "Architecture de systèmes IA avec l’observabilité en tête"
+      ],
+      "roadmap": [
+        "Finaliser le store vectoriel et le schéma de métadonnées",
+        "Définir les frontières et interfaces des services internes",
+        "Ajouter des mécanismes d’évaluation et de scoring de la qualité de retrieval",
+        "Construire une interface frontend pour l’inspection et le debug des requêtes",
+        "Expérimenter plusieurs fournisseurs de LLM et des modèles locaux"
+      ]
     }
   },
   "contact": {

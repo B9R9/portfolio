@@ -133,65 +133,78 @@ export const PROJECTS: Project[] = [
     downloadUrl: 'https://github.com/B9R9/Thoughts/archive/refs/heads/main.zip',
   },
   {
-    slug: 'hivemind-rag-assistant',
-    title: 'HiveMind',
-    tagline:
-      'A modular RAG backend that turns user queries into vectors, retrieves relevant context with metadata filtering, and generates grounded answers.',
+    slug: 'hivemind-llm-platform',
 
-    type: 'personal',
-    tags: ['RAG', 'LLM', 'Vector Search', 'FastAPI', 'Portfolio'],
+    title: 'HiveMind',
+    titleKey: 'projectsData.hivemindLlmPlatform.title',
+    tagline: 'A modular LLM platform with vector search and metadata-driven reasoning',
+    taglineKey: 'projectsData.hivemindLlmPlatform.tagline',
+    type: 'ongoing',
+
+    tags: ['LLM', 'AI', 'Vector Search', 'RAG', 'Backend Architecture', 'Developer Tooling'],
+
     stack: [
       'FastAPI',
       'Python',
-      'Vector DB (Qdrant/Chroma)',
-      'Embeddings (e.g. bge / OpenAI-compatible)',
+      'LLM (local & API-based)',
+      'Vector Database',
+      'Embeddings',
       'React',
       'Tailwind CSS',
-      'Docker',
     ],
 
     problem:
-      'I needed a reliable way to answer user questions based on my own documents and project knowledge, without hallucinations. Traditional keyword search wasn’t enough, and I also wanted metadata-aware filtering (topic, recency, type of source) to improve precision.',
+      'Most LLM-based applications lack structure, controllability, and scalability. \
+    Prompt-only approaches make it difficult to refine results, apply filtering logic, \
+    or evolve toward more complex reasoning systems.',
+    problemKey: 'projectsData.hivemindLlmPlatform.problem',
+
     solution:
-      'I built a modular RAG pipeline: the user query is embedded, searched in a vector store, refined with metadata filters/boosting, then a response is generated with citations. Internal endpoints expose each step (embed/search/rerank/generate) so the system stays testable and evolvable.',
+      'HiveMind introduces a modular backend architecture where user queries are transformed \
+    into embeddings, compared against a vector store, refined through metadata affinity, \
+    and then reformulated before being sent to the LLM. This enables precise, explainable, \
+    and extensible LLM-driven workflows.',
+    solutionKey: 'projectsData.hivemindLlmPlatform.solution',
 
     highlights: [
-      'End-to-end RAG pipeline with metadata-aware retrieval',
-      'Separation of concerns: embed → retrieve → refine → generate',
-      'Configurable retrieval (filters/boosting) to improve relevance',
-      'Response generation designed for grounding + citations',
-      'Backend structured as modules/services (no premature microservices)',
+      'Vector-based semantic search combined with metadata filtering',
+      'Clear separation between embedding, retrieval, and generation layers',
+      'Modular service-oriented backend architecture (non-microservice)',
+      'Designed for extensibility and experimentation with LLM behavior',
+      'Frontend planned for observability and interaction flow debugging',
     ],
+    highlightsKey: 'projectsData.hivemindLlmPlatform.highlights',
 
     description: [
-      'HiveMind is a portfolio-oriented assistant that can answer questions using a curated knowledge base.',
-      'It supports semantic search via vector embeddings, plus metadata filtering to narrow results by source type, topic, or recency.',
-      'The API exposes internal endpoints for experimentation (embedding, indexing, retrieval, reranking, and final generation).',
+      'HiveMind is an experimental LLM platform focused on control, structure, and evolvability.',
+      'Instead of directly prompting a language model, user inputs are embedded and matched \
+    against a vector store enriched with metadata.',
+      'The system evaluates semantic affinity, applies contextual filters, and reformulates \
+    the query to guide the LLM toward more relevant and consistent responses.',
+      'The backend is implemented with FastAPI and organized into internal services to allow \
+    future scaling without premature microservice complexity.',
     ],
+    descriptionKey: 'projectsData.hivemindLlmPlatform.description',
 
     learnings: [
-      'Metadata filtering is a big quality lever for RAG: it reduces noise and improves answer faithfulness.',
-      'Keeping retrieval and generation decoupled makes testing far easier (unit tests for retrieval quality, integration tests for the whole flow).',
-      'A modular monolith is often the best starting point before splitting into microservices.',
+      'Designing LLM systems beyond prompt engineering',
+      'Trade-offs between monoliths, modular services, and microservices',
+      'Practical use of vector databases and embedding strategies',
+      'Importance of metadata for relevance and control in RAG systems',
+      'Architecting AI systems with future observability in mind',
     ],
+    learningsKey: 'projectsData.hivemindLlmPlatform.learnings',
 
     roadmap: [
-      'Add reranking (cross-encoder) for better top-k selection',
-      'Implement evaluation harness (golden Q/A, retrieval metrics, regression tests)',
-      'Add observability: request tracing + retrieval debugging UI',
-      'Streaming responses + source previews in the UI',
-      'Multi-tenant knowledge bases (per user / per workspace)',
+      'Finalize vector store and metadata schema',
+      'Implement internal service boundaries and interfaces',
+      'Add evaluation and scoring mechanisms for retrieval quality',
+      'Build a frontend interface for query inspection and debugging',
+      'Experiment with multiple LLM providers and local models',
     ],
+    roadmapKey: 'projectsData.hivemindLlmPlatform.roadmap',
 
-    imageUrl: [
-      '/images/projects/hivemind/cover.png',
-      '/images/projects/hivemind/architecture.png',
-      '/images/projects/hivemind/ui.png',
-    ],
-
-    repoUrl: 'https://github.com/<your-username>/hivemind',
-    demoUrl: 'https://<your-demo-domain>',
-    downloadUrl: 'https://<your-download-link>',
+    repoUrl: 'https://github.com/B9R9/HiveMind?tab=readme-ov-file#readme',
   },
   {
     slug: 'arties-work',

@@ -146,6 +146,39 @@
         "Local export and backup",
         "Optional advanced modules (AI assistance, voice input)"
       ]
+    },
+    "hivemindLlmPlatform": {
+      "title": "HiveMind",
+      "tagline": "A modular LLM platform with vector search and metadata-driven reasoning",
+      "problem": "Most LLM-based applications lack structure, controllability, and scalability. Prompt-only approaches make it difficult to refine results, apply filtering logic, or evolve toward more complex reasoning systems.",
+      "solution": "HiveMind introduces a modular backend architecture where user queries are transformed into embeddings, compared against a vector store, refined through metadata affinity, and then reformulated before being sent to the LLM. This enables precise, explainable, and extensible LLM-driven workflows.",
+      "highlights": [
+        "Vector-based semantic search combined with metadata filtering",
+        "Clear separation between embedding, retrieval, and generation layers",
+        "Modular service-oriented backend architecture (non-microservice)",
+        "Designed for extensibility and experimentation with LLM behavior",
+        "Frontend planned for observability and interaction flow debugging"
+      ],
+      "description": [
+        "HiveMind is an experimental LLM platform focused on control, structure, and evolvability.",
+        "Instead of directly prompting a language model, user inputs are embedded and matched against a vector store enriched with metadata.",
+        "The system evaluates semantic affinity, applies contextual filters, and reformulates the query to guide the LLM toward more relevant and consistent responses.",
+        "The backend is implemented with FastAPI and organized into internal services to allow future scaling without premature microservice complexity."
+      ],
+      "learnings": [
+        "Designing LLM systems beyond prompt engineering",
+        "Trade-offs between monoliths, modular services, and microservices",
+        "Practical use of vector databases and embedding strategies",
+        "Importance of metadata for relevance and control in RAG systems",
+        "Architecting AI systems with future observability in mind"
+      ],
+      "roadmap": [
+        "Finalize vector store and metadata schema",
+        "Implement internal service boundaries and interfaces",
+        "Add evaluation and scoring mechanisms for retrieval quality",
+        "Build a frontend interface for query inspection and debugging",
+        "Experiment with multiple LLM providers and local models"
+      ]
     }
   },
   "contact": {

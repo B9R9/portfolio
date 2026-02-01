@@ -11,6 +11,9 @@
         <p class="text-white/70 max-w-2xl">
           {{ $t('hero.subtitle2') }}
         </p>
+        <p class="text-white/70 max-w-2xl">
+          {{ $t('hero.subtitle3') }}
+        </p>
 
         <div class="flex flex-wrap gap-3 pt-2">
           <a href="#projects" class="btn-primary">{{ $t('hero.cta.projects') }}</a>

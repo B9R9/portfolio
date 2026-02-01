@@ -18,6 +18,8 @@
     "title": "I build clear, maintainable, and useful applications.",
     "subtitle1": "Full-stack software developer, product-oriented, with a strong focus on code quality, readability, and real-world impact.",
     "subtitle2": "Trained at Hive Helsinki and experienced in professional environments, I design web and mobile apps built to evolve over time.",
+    "subtitle3": "Currently open to full-time or contract opportunities.",
+
     "cta": {
       "projects": "See my projects",
       "contact": "Contact me"
@@ -152,7 +154,7 @@
       "roadmap": "Roadmap"
     },
     "cta": {
-      "title": "Want to discuss?",
+      "title": "Want to discuss a role, a project, or a collaboration?",
       "body": "I can walk through the technical choices, the structure, and the next steps.",
       "button": "Contact me"
     }

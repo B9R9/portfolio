@@ -178,6 +178,55 @@
         "Construire une interface frontend pour l’inspection et le debug des requêtes",
         "Expérimenter plusieurs fournisseurs de LLM et des modèles locaux"
       ]
+    },
+    "artiesApp": {
+      "title": "Arties",
+      "tagline": "Découvrir des événements culturels autour de vous",
+      "problem": "Les événements culturels sont souvent dispersés sur plusieurs plateformes, ce qui rend leur découverte difficile et chronophage pour les utilisateurs.",
+      "solution": "Arties centralise les événements culturels dans une seule application mobile, offrant une expérience fluide et intuitive pour découvrir des événements selon les intérêts et la localisation de l’utilisateur.",
+      "highlights": [
+        "Développement d’une application mobile cross‑platform avec Flutter",
+        "Conception et intégration d’API REST avec Node.js et TypeScript",
+        "Gestion et optimisation d’une base PostgreSQL",
+        "Contribution aux tests, au debug et au déploiement continu",
+        "Travail en full remote dans un environnement collaboratif"
+      ],
+      "description": [
+        "Arties est une application mobile dédiée à la découverte d’événements culturels.",
+        "Le projet visait à offrir une expérience rapide, fiable et agréable.",
+        "J’ai travaillé sur toute la stack, de l’intégration API à l’UI mobile.",
+        "Une attention particulière a été portée à la cohérence des données, la performance et les tests."
+      ],
+      "learnings": [
+        "Construire et maintenir des applications mobiles prêtes pour la production",
+        "Améliorer le design des API et la modélisation des bases de données",
+        "Travailler efficacement dans une équipe remote et asynchrone",
+        "Renforcer les pratiques de tests et de déploiement"
+      ]
+    },
+    "hyperinPlatform": {
+      "title": "HyperIn",
+      "tagline": "Plateforme de gestion intelligente pour centres commerciaux",
+      "problem": "La plateforme existante nécessitait une modernisation pour améliorer l’utilisabilité, les performances et la maintenabilité sur le long terme, tout en soutenant une roadmap produit en évolution.",
+      "solution": "Modernisation des parties clés de l’application web avec Vue.js et Quasar, améliorant la cohérence UI, les performances et l’expérience développeur tout en assurant une intégration fluide avec les API backend.",
+      "highlights": [
+        "Modernisation des interfaces utilisateur avec Vue.js et Quasar",
+        "Migration de fonctionnalités legacy vers des frameworks à jour",
+        "Connexion des fonctionnalités frontend aux API backend",
+        "Écriture de tests unitaires et d’intégration pour garantir la fiabilité",
+        "Collaboration avec des équipes pluridisciplinaires pour livrer des solutions end‑to‑end"
+      ],
+      "description": [
+        "HyperIn est une plateforme SaaS conçue pour aider les centres commerciaux à gérer les expériences digitales, les offres et l’engagement client.",
+        "J’ai travaillé sur l’amélioration et la modernisation des fonctionnalités frontend tout en maintenant la stabilité produit.",
+        "Le rôle nécessitait d’équilibrer des améliorations techniques avec des contraintes business dans un environnement de production."
+      ],
+      "learnings": [
+        "Travailler sur des applications SaaS à grande échelle et prêtes pour la production",
+        "Refactorer et moderniser des codebases legacy",
+        "Améliorer l’UX sans perturber les utilisateurs existants",
+        "Collaborer efficacement avec les équipes produit et backend"
+      ]
     }
   },
   "contact": {

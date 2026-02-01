@@ -178,6 +178,55 @@
         "Bygg ett frontend‑gränssnitt för query‑inspektion och debug",
         "Experimentera med flera LLM‑leverantörer och lokala modeller"
       ]
+    },
+    "artiesApp": {
+      "title": "Arties",
+      "tagline": "Upptäck kulturevenemang i närheten",
+      "problem": "Kulturevenemang är ofta utspridda över flera plattformar, vilket gör upptäckt svårt och tidskrävande för användare.",
+      "solution": "Arties samlar kulturevenemang i en enda mobilapp och ger en smidig och intuitiv upplevelse för att hitta event utifrån användarens intressen och plats.",
+      "highlights": [
+        "Utvecklade en cross‑platform‑mobilapp med Flutter",
+        "Designade och integrerade REST‑API:er med Node.js och TypeScript",
+        "Hanterade och optimerade en PostgreSQL‑databas",
+        "Bidrog till testning, felsökning och kontinuerlig deployment",
+        "Arbetade helt remote i en samarbetsmiljö"
+      ],
+      "description": [
+        "Arties är en mobilapp dedikerad till att upptäcka kulturevenemang.",
+        "Projektet fokuserade på att leverera en snabb, stabil och användarvänlig upplevelse.",
+        "Jag arbetade full‑stack, från API‑integration till mobil‑UI‑implementering.",
+        "Särskild vikt lades vid datakonsistens, prestanda och testning."
+      ],
+      "learnings": [
+        "Bygga och underhålla produktionsredo mobilappar",
+        "Förbättra API‑design och databasmodellering",
+        "Arbeta effektivt i ett remote och asynkront team",
+        "Stärka test- och deploymentsrutiner"
+      ]
+    },
+    "hyperinPlatform": {
+      "title": "HyperIn",
+      "tagline": "Smart hanteringsplattform för köpcentrum",
+      "problem": "Den befintliga plattformen behövde moderniseras för att förbättra användbarhet, prestanda och långsiktig underhållbarhet samtidigt som en utvecklande produkt‑roadmap stöds.",
+      "solution": "Moderniserade nyckeldelar av webbapplikationen med Vue.js och Quasar, vilket förbättrade UI‑konsistens, prestanda och utvecklarupplevelse samt säkerställde sömlös integration med backend‑API:er.",
+      "highlights": [
+        "Moderniserade användargränssnitt med Vue.js och Quasar",
+        "Migrerade legacy‑funktioner till uppdaterade ramverk",
+        "Kopplade frontend‑funktioner till backend‑API:er",
+        "Skrev enhets- och integrationstester för att säkerställa tillförlitlighet",
+        "Samarbetade med tvärfunktionella team för end‑to‑end‑leveranser"
+      ],
+      "description": [
+        "HyperIn är en SaaS‑plattform som hjälper köpcentrum att hantera digitala upplevelser, erbjudanden och kundengagemang.",
+        "Jag arbetade med att förbättra och modernisera befintliga frontend‑funktioner samtidigt som produktstabiliteten bibehölls.",
+        "Rollen krävde balans mellan tekniska förbättringar och affärsbegränsningar i en live‑produktion."
+      ],
+      "learnings": [
+        "Arbeta med storskaliga, produktionsklara SaaS‑applikationer",
+        "Refaktorera och modernisera legacy‑kodbaser",
+        "Förbättra UX utan att störa befintliga användare",
+        "Samarbeta effektivt med produkt- och backend‑team"
+      ]
     }
   },
   "contact": {

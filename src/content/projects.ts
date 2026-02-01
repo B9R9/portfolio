@@ -207,126 +207,99 @@ export const PROJECTS: Project[] = [
     repoUrl: 'https://github.com/B9R9/HiveMind?tab=readme-ov-file#readme',
   },
   {
-    slug: 'arties-work',
+    slug: 'arties-app',
     title: 'Arties',
-    tagline:
-      'A modular RAG backend that turns user queries into vectors, retrieves relevant context with metadata filtering, and generates grounded answers.',
-
+    titleKey: 'projectsData.artiesApp.title',
+    tagline: 'Discover cultural events around you',
+    taglineKey: 'projectsData.artiesApp.tagline',
     type: 'work',
-    tags: ['RAG', 'LLM', 'Vector Search', 'FastAPI', 'Portfolio'],
-    stack: [
-      'FastAPI',
-      'Python',
-      'Vector DB (Qdrant/Chroma)',
-      'Embeddings (e.g. bge / OpenAI-compatible)',
-      'React',
-      'Tailwind CSS',
-      'Docker',
-    ],
+
+    tags: ['Mobile App', 'Fullstack', 'Flutter', 'Node.js', 'TypeScript', 'PostgreSQL', 'REST API'],
+    stack: ['Flutter', 'Node.js', 'TypeScript', 'PostgreSQL', 'REST API', 'Testing', 'CI/CD'],
 
     problem:
-      'I needed a reliable way to answer user questions based on my own documents and project knowledge, without hallucinations. Traditional keyword search wasn’t enough, and I also wanted metadata-aware filtering (topic, recency, type of source) to improve precision.',
+      'Cultural events are often scattered across multiple platforms, making discovery difficult and time-consuming for users.',
+    problemKey: 'projectsData.artiesApp.problem',
+
     solution:
-      'I built a modular RAG pipeline: the user query is embedded, searched in a vector store, refined with metadata filters/boosting, then a response is generated with citations. Internal endpoints expose each step (embed/search/rerank/generate) so the system stays testable and evolvable.',
+      'Arties centralizes cultural events into a single mobile application, offering a smooth and intuitive experience to discover events based on user interests and location.',
+    solutionKey: 'projectsData.artiesApp.solution',
 
     highlights: [
-      'End-to-end RAG pipeline with metadata-aware retrieval',
-      'Separation of concerns: embed → retrieve → refine → generate',
-      'Configurable retrieval (filters/boosting) to improve relevance',
-      'Response generation designed for grounding + citations',
-      'Backend structured as modules/services (no premature microservices)',
+      'Developed a cross-platform mobile application using Flutter',
+      'Designed and integrated REST APIs with Node.js and TypeScript',
+      'Managed and optimized a PostgreSQL database',
+      'Contributed to testing, debugging, and continuous deployment',
+      'Worked fully remote in a collaborative environment',
     ],
+    highlightsKey: 'projectsData.artiesApp.highlights',
 
     description: [
-      'HiveMind is a portfolio-oriented assistant that can answer questions using a curated knowledge base.',
-      'It supports semantic search via vector embeddings, plus metadata filtering to narrow results by source type, topic, or recency.',
-      'The API exposes internal endpoints for experimentation (embedding, indexing, retrieval, reranking, and final generation).',
+      'Arties is a mobile application dedicated to cultural event discovery.',
+      'The project focused on delivering a fast, reliable, and user-friendly experience.',
+      'I worked across the full stack, from API integration to mobile UI implementation.',
+      'Special attention was given to data consistency, performance, and testing.',
     ],
+    descriptionKey: 'projectsData.artiesApp.description',
 
     learnings: [
-      'Metadata filtering is a big quality lever for RAG: it reduces noise and improves answer faithfulness.',
-      'Keeping retrieval and generation decoupled makes testing far easier (unit tests for retrieval quality, integration tests for the whole flow).',
-      'A modular monolith is often the best starting point before splitting into microservices.',
+      'Building and maintaining production-ready mobile applications',
+      'Improving API design and database modeling',
+      'Working efficiently in a remote, asynchronous team',
+      'Strengthening testing and deployment practices',
     ],
-
-    roadmap: [
-      'Add reranking (cross-encoder) for better top-k selection',
-      'Implement evaluation harness (golden Q/A, retrieval metrics, regression tests)',
-      'Add observability: request tracing + retrieval debugging UI',
-      'Streaming responses + source previews in the UI',
-      'Multi-tenant knowledge bases (per user / per workspace)',
-    ],
+    learningsKey: 'projectsData.artiesApp.learnings',
 
     imageUrl: [
-      '/images/projects/hivemind/cover.png',
-      '/images/projects/hivemind/architecture.png',
-      '/images/projects/hivemind/ui.png',
+      '/images/arties/logo.jpeg',
+      '/images/arties/arties1.jpg',
+      '/images/arties/arties2.jpg',
     ],
-
-    repoUrl: 'https://github.com/<your-username>/hivemind',
-    demoUrl: 'https://<your-demo-domain>',
-    downloadUrl: 'https://<your-download-link>',
   },
   {
-    slug: 'hyperin-work',
-    title: 'hyperin',
-    tagline:
-      'A modular RAG backend that turns user queries into vectors, retrieves relevant context with metadata filtering, and generates grounded answers.',
-
+    slug: 'hyperin-platform',
+    title: 'HyperIn',
+    titleKey: 'projectsData.hyperinPlatform.title',
+    tagline: 'Smart management platform for shopping centers',
+    taglineKey: 'projectsData.hyperinPlatform.tagline',
     type: 'work',
-    tags: ['RAG', 'LLM', 'Vector Search', 'FastAPI', 'Portfolio'],
-    stack: [
-      'FastAPI',
-      'Python',
-      'Vector DB (Qdrant/Chroma)',
-      'Embeddings (e.g. bge / OpenAI-compatible)',
-      'React',
-      'Tailwind CSS',
-      'Docker',
-    ],
+
+    tags: ['SaaS', 'Web App', 'Vue.js', 'Quasar', 'JavaScript', 'Node.js', 'REST API'],
+    stack: ['Vue.js', 'Quasar', 'JavaScript', 'Node.js', 'REST API', 'Testing', 'Agile'],
 
     problem:
-      'I needed a reliable way to answer user questions based on my own documents and project knowledge, without hallucinations. Traditional keyword search wasn’t enough, and I also wanted metadata-aware filtering (topic, recency, type of source) to improve precision.',
+      'The existing platform required modernization to improve usability, performance, and long-term maintainability while supporting an evolving product roadmap.',
+    problemKey: 'projectsData.hyperinPlatform.problem',
+
     solution:
-      'I built a modular RAG pipeline: the user query is embedded, searched in a vector store, refined with metadata filters/boosting, then a response is generated with citations. Internal endpoints expose each step (embed/search/rerank/generate) so the system stays testable and evolvable.',
+      'Modernized key parts of the web application using Vue.js and Quasar, improving UI consistency, performance, and developer experience while ensuring seamless integration with backend APIs.',
+    solutionKey: 'projectsData.hyperinPlatform.solution',
 
     highlights: [
-      'End-to-end RAG pipeline with metadata-aware retrieval',
-      'Separation of concerns: embed → retrieve → refine → generate',
-      'Configurable retrieval (filters/boosting) to improve relevance',
-      'Response generation designed for grounding + citations',
-      'Backend structured as modules/services (no premature microservices)',
+      'Modernized user interfaces using Vue.js and Quasar',
+      'Migrated legacy features to up-to-date frameworks',
+      'Connected frontend features to backend APIs',
+      'Wrote unit and integration tests to ensure reliability',
+      'Collaborated with cross-functional teams to deliver end-to-end solutions',
     ],
+    highlightsKey: 'projectsData.hyperinPlatform.highlights',
 
     description: [
-      'HiveMind is a portfolio-oriented assistant that can answer questions using a curated knowledge base.',
-      'It supports semantic search via vector embeddings, plus metadata filtering to narrow results by source type, topic, or recency.',
-      'The API exposes internal endpoints for experimentation (embedding, indexing, retrieval, reranking, and final generation).',
+      'HyperIn is a SaaS platform designed to help shopping centers manage digital experiences, offers, and customer engagement.',
+      'I worked on improving and modernizing existing frontend features while maintaining product stability.',
+      'The role required balancing technical improvements with business constraints in a live production environment.',
     ],
+    descriptionKey: 'projectsData.hyperinPlatform.description',
 
     learnings: [
-      'Metadata filtering is a big quality lever for RAG: it reduces noise and improves answer faithfulness.',
-      'Keeping retrieval and generation decoupled makes testing far easier (unit tests for retrieval quality, integration tests for the whole flow).',
-      'A modular monolith is often the best starting point before splitting into microservices.',
+      'Working on large-scale, production-ready SaaS applications',
+      'Refactoring and modernizing legacy codebases',
+      'Improving UX without disrupting existing users',
+      'Collaborating effectively with product and backend teams',
     ],
-
-    roadmap: [
-      'Add reranking (cross-encoder) for better top-k selection',
-      'Implement evaluation harness (golden Q/A, retrieval metrics, regression tests)',
-      'Add observability: request tracing + retrieval debugging UI',
-      'Streaming responses + source previews in the UI',
-      'Multi-tenant knowledge bases (per user / per workspace)',
-    ],
-
-    imageUrl: [
-      '/images/projects/hivemind/cover.png',
-      '/images/projects/hivemind/architecture.png',
-      '/images/projects/hivemind/ui.png',
-    ],
-
-    repoUrl: 'https://github.com/<your-username>/hivemind',
-    demoUrl: 'https://<your-demo-domain>',
-    downloadUrl: 'https://<your-download-link>',
+    learningsKey: 'projectsData.hyperinPlatform.learnings',
+    imageUrl: ['/images/hyperin/logo.jpeg'],
+    demoUrl: 'https://www.hyperin.com/',
   },
   {
     slug: 'tenant-dashboard',

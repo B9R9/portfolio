@@ -178,6 +178,55 @@
         "Rakennetaan frontend‑käyttöliittymä kyselyjen tarkasteluun ja debugiin",
         "Kokeillaan useita LLM‑palveluntarjoajia ja paikallisia malleja"
       ]
+    },
+    "artiesApp": {
+      "title": "Arties",
+      "tagline": "Löydä kulttuuritapahtumia lähelläsi",
+      "problem": "Kulttuuritapahtumat ovat usein hajallaan useilla alustoilla, mikä tekee löytämisestä vaikeaa ja aikaa vievää.",
+      "solution": "Arties keskittää kulttuuritapahtumat yhteen mobiilisovellukseen ja tarjoaa sujuvan, intuitiivisen kokemuksen tapahtumien löytämiseen käyttäjän kiinnostusten ja sijainnin perusteella.",
+      "highlights": [
+        "Kehitettiin cross‑platform‑mobiilisovellus Flutterilla",
+        "Suunniteltiin ja integroitin REST‑rajapinnat Node.js:llä ja TypeScriptillä",
+        "Hallitin ja optimoin PostgreSQL‑tietokantaa",
+        "Osallistuin testaukseen, debugaukseen ja jatkuvaan julkaisuun",
+        "Työskentelin täysin etänä yhteistyöympäristössä"
+      ],
+      "description": [
+        "Arties on mobiilisovellus kulttuuritapahtumien löytämiseen.",
+        "Projektin tavoitteena oli tarjota nopea, luotettava ja käyttäjäystävällinen kokemus.",
+        "Työskentelin koko stackin parissa API‑integraatiosta mobiili‑UI:n toteutukseen.",
+        "Erityistä huomiota kiinnitettiin datan johdonmukaisuuteen, suorituskykyyn ja testaukseen."
+      ],
+      "learnings": [
+        "Tuotantovalmiiden mobiilisovellusten rakentaminen ja ylläpito",
+        "API‑suunnittelun ja tietokantamallinnuksen parantaminen",
+        "Tehokas työskentely etä‑ ja asynkronisessa tiimissä",
+        "Testaus- ja julkaisu­käytäntöjen vahvistaminen"
+      ]
+    },
+    "hyperinPlatform": {
+      "title": "HyperIn",
+      "tagline": "Älykäs hallinta-alusta kauppakeskuksille",
+      "problem": "Olemassa oleva alusta vaati modernisointia käytettävyyden, suorituskyvyn ja pitkäaikaisen ylläpidettävyyden parantamiseksi samalla, kun tuotteen roadmap kehittyi.",
+      "solution": "Modernisoitiin web‑sovelluksen keskeisiä osia Vue.js:llä ja Quasarilla, parantaen UI‑johdonmukaisuutta, suorituskykyä ja kehittäjäkokemusta sekä varmistaen saumattoman integraation backend‑API:en kanssa.",
+      "highlights": [
+        "Modernisoitiin käyttöliittymät Vue.js:llä ja Quasarilla",
+        "Migrattiin legacy‑ominaisuuksia ajantasaisiin frameworkeihin",
+        "Kytkettiin frontend‑ominaisuudet backend‑API:iin",
+        "Kirjoitettiin yksikkö- ja integraatiotestit luotettavuuden varmistamiseksi",
+        "Yhteistyö monialaisen tiimin kanssa end‑to‑end‑ratkaisujen toimittamiseksi"
+      ],
+      "description": [
+        "HyperIn on SaaS‑alusta, joka auttaa kauppakeskuksia hallitsemaan digitaalisia kokemuksia, tarjouksia ja asiakasvuorovaikutusta.",
+        "Työskentelin olemassa olevien frontend‑ominaisuuksien parissa parantaen ja modernisoiden niitä tuotestabiliteetin säilyttäen.",
+        "Rooli vaati teknisten parannusten tasapainottamista liiketoimintarajoitteiden kanssa tuotantoympäristössä."
+      ],
+      "learnings": [
+        "Työskentely laajamittaisten, tuotantovalmiiden SaaS‑sovellusten parissa",
+        "Legacy‑koodikantojen refaktorointi ja modernisointi",
+        "UX:n parantaminen häiritsemättä olemassa olevia käyttäjiä",
+        "Tehokas yhteistyö tuote- ja backend‑tiimien kanssa"
+      ]
     }
   },
   "contact": {

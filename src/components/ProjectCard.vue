@@ -1,0 +1,44 @@
+<template>
+  <div v-if="project" @click="$router.push(`/projects/${project.slug}`)" class="cursor-pointer">
+    <article
+      class="col-span-4 flex flex-col md:col-span-2 lg:col-span-1 hover:scale-[1.02] transition-transform"
+    >
+      <div class="card flex h-full min-h-[300px] flex-col gap-4">
+        <header class="text-sm font-semibold text-white">{{ project.title }}</header>
+        <div class="relative overflow-hidden rounded-md border border-white/10 bg-white/5">
+          <div class="relative h-48 overflow-hidden">
+            <img
+              v-if="project.imageUrl?.length"
+              :src="project.imageUrl[0]"
+              :alt="$t('projects.card.imageAlt', { title: project.title })"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+            <div v-else class="absolute inset-0 bg-white/5" />
+          </div>
+          <div
+            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-3 text-xs text-white/80"
+          >
+            {{ project.tagline }}
+          </div>
+        </div>
+        <div class="scrollbar-subtle mt-auto flex items-center gap-2 overflow-x-auto">
+          <span
+            v-for="tag in project.tags"
+            :key="tag"
+            class="shrink-0 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/60"
+          >
+            {{ tag }}
+          </span>
+        </div>
+      </div>
+    </article>
+  </div>
+</template>
+
+<script setup lang="ts">
+import type { Project } from '../content/projects'
+
+defineProps<{
+  project: Project
+}>()
+</script>

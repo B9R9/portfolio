@@ -1,0 +1,160 @@
+{
+  "localisation": "Sijainti",
+  "common": {
+    "loading": "Ladataan"
+  },
+  "nav": {
+    "downloadCv": "Lataa CV",
+    "projects": "Projektit",
+    "contact": "Yhteys"
+  },
+  "footer": {
+    "builtWith": "Rakennettu Vue + Tailwindilla"
+  },
+  "languageSelector": {
+    "aria": "Kielivalitsin"
+  },
+  "hero": {
+    "title": "Rakennan selkeitä, ylläpidettäviä ja hyödyllisiä sovelluksia.",
+    "subtitle1": "Full-stack-ohjelmistokehittäjä, tuotelähtöinen, painotan koodin laatua, luettavuutta ja todellista vaikutusta.",
+    "subtitle2": "Hive Helsinkissä kouluttautunut ja ammatillisissa ympäristöissä kokenut; suunnittelen web- ja mobiilisovelluksia, jotka kestävät aikaa.",
+    "cta": {
+      "projects": "Katso projektit",
+      "contact": "Ota yhteyttä"
+    },
+    "cv": {
+      "view": "Näytä CV",
+      "download": "Lataa CV"
+    },
+    "meta": "Helsinki, Suomi · Full-stack · Vue / TypeScript · Go / Node · Testing"
+  },
+  "journey": {
+    "title": "Polkuni",
+    "subtitle": "Koulutus, kokemus, konteksti.",
+    "p1": "Entinen tiiminvetäjä, joka kouluttautui kehittäjäksi; suoritin vaativan ohjelmistotekniikan koulutuksen Hive Helsingissä.",
+    "p2": "Työskentelin sen jälkeen full-stack-kehittäjänä konkreettisissa tuotteissa, kansainvälisessä ja täysin etäisessä ympäristössä.",
+    "p3": "Polkuni opetti teknistä kurinalaisuutta sekä viestinnän, palautteen ja tiimityön tärkeyttä.",
+    "meta": "Hive Helsinki · HyperIn · Arties · FullStack Open"
+  },
+  "value": {
+    "title": "Vahvuuteni",
+    "items": {
+      "maintainable": {
+        "title": "Ylläpidettävät sovellukset",
+        "body": "Selkeä arkkitehtuuri, luettava koodi, relevantit testit ja hallittu tekninen velka. Yksinkertaisia ja ymmärrettäviä ratkaisuja, joita on helppo kehittää.",
+        "meta": "Vue · Quasar · TypeScript · Tests"
+      },
+      "fullstack": {
+        "title": "Pragmaattinen full-stack",
+        "body": "Käyttöliittymä, API, tietokanta: valitsen työkalut tuotteen kontekstin mukaan, en trendien perusteella.",
+        "meta": "Node · Deno · Go · Python · PostgreSQL"
+      },
+      "problemSolving": {
+        "title": "Ongelmanratkaisu",
+        "body": "Vahva perusta järjestelmäohjelmoinnissa ja analyysissä. Haluan ymmärtää syvällisesti ennen rakentamista.",
+        "meta": "C · Algoritmit · SQL · Debugging"
+      }
+    }
+  },
+  "skills": {
+    "title": "Tekniset taidot",
+    "frontend": {
+      "title": "Frontend",
+      "body": "Vue.js · Quasar · TypeScript · HTML · CSS · React · Svelte · Flutter"
+    },
+    "backend": {
+      "title": "Backend",
+      "body": "Node.js · Deno · Go · Python · C · C# · Java"
+    },
+    "data": {
+      "title": "Data",
+      "body": "PostgreSQL · SQL · MongoDB · Redis · Typesense · Neon"
+    },
+    "tools": {
+      "title": "Työkalut & käytännöt",
+      "body": "Git · Docker · Agile · Jira · Confluence · Testing · CI/CD · Performance · Figma"
+    }
+  },
+  "workStyle": {
+    "title": "Miten työskentelen",
+    "items": {
+      "quality": {
+        "title": "Laatu ennen nopeutta",
+        "body": "Suosin selkeää, testattua ja ymmärrettävää koodia nopeiden mutta haurasten ratkaisujen sijaan."
+      },
+      "collaboration": {
+        "title": "Yhteistyö & palaute",
+        "body": "Olen tottunut yhteistyöhön ja työskentelen tiiviisti suunnittelijoiden, PO:iden ja devien kanssa."
+      },
+      "improvement": {
+        "title": "Jatkuva parantaminen",
+        "body": "Opin jatkuvasti ja parannan käytäntöjäni projektien ja palautteen myötä."
+      },
+      "autonomy": {
+        "title": "Vastuullinen autonomia",
+        "body": "Teen päätöksiä, dokumentoin, ja pysyn linjassa tuotteen tavoitteiden kanssa."
+      }
+    }
+  },
+  "projects": {
+    "title": "Valitut projektit",
+    "filter": {
+      "label": "Valitse",
+      "all": "Kaikki",
+      "work": "Työ",
+      "personal": "Henkilökohtaiset projektit"
+    },
+    "tags": {
+      "label": "Tunnisteet"
+    },
+    "card": {
+      "imageAlt": "Esikatselu: {title}"
+    },
+    "empty": "Yksikään projekti ei vastaa näitä suodattimia."
+  },
+  "contact": {
+    "title": "Yhteys",
+    "subtitle": "Haluatko keskustella projektista, roolista tai yhteistyöstä?",
+    "cta": {
+      "email": "Sähköposti",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "notFound": {
+    "message": "Sivua ei löytynyt.",
+    "cta": "Takaisin etusivulle"
+  },
+  "projectDetail": {
+    "back": "Takaisin",
+    "links": {
+      "repo": "Repo",
+      "demo": "Demo",
+      "code": "Näytä koodi",
+      "viewDemo": "Näytä demo",
+      "download": "Lataa",
+      "contact": "Ota yhteyttä"
+    },
+    "notFound": {
+      "title": "Projektia ei löytynyt",
+      "body": "Linkki vaikuttaa virheelliseltä tai projekti ei ole enää saatavilla.",
+      "cta": "Takaisin projekteihin"
+    },
+    "stack": "Stack",
+    "highlights": "Kohokohdat",
+    "preview": "Esikatselu",
+    "imageAlt": "{title} — kuvakaappaus",
+    "sections": {
+      "problem": "Ongelma",
+      "solution": "Ratkaisu",
+      "details": "Yksityiskohdat",
+      "learnings": "Opit",
+      "roadmap": "Roadmap"
+    },
+    "cta": {
+      "title": "Haluatko keskustella?",
+      "body": "Voin käydä läpi tekniset valinnat, rakenteen ja seuraavat askeleet.",
+      "button": "Ota yhteyttä"
+    }
+  }
+}

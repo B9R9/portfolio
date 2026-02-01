@@ -1,0 +1,160 @@
+{
+  "localisation": "Plats",
+  "common": {
+    "loading": "Laddar"
+  },
+  "nav": {
+    "downloadCv": "Ladda ner CV",
+    "projects": "Projekt",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "builtWith": "Byggd med Vue + Tailwind"
+  },
+  "languageSelector": {
+    "aria": "Språkväljare"
+  },
+  "hero": {
+    "title": "Jag bygger tydliga, underhållbara och användbara applikationer.",
+    "subtitle1": "Full-stack-utvecklare med produktfokus och stark betoning på kodkvalitet, läsbarhet och verklig effekt.",
+    "subtitle2": "Utbildad på Hive Helsinki och erfaren i professionella miljöer; jag designar webb- och mobilappar som är byggda för att utvecklas över tid.",
+    "cta": {
+      "projects": "Se mina projekt",
+      "contact": "Kontakta mig"
+    },
+    "cv": {
+      "view": "Visa CV",
+      "download": "Ladda ner CV"
+    },
+    "meta": "Helsingfors, Finland · Full-stack · Vue / TypeScript · Go / Node · Testing"
+  },
+  "journey": {
+    "title": "Min resa",
+    "subtitle": "Utbildning, erfarenhet, kontext.",
+    "p1": "Tidigare teamledare som bytte bana till utveckling; jag genomförde en krävande mjukvaruingenjörsutbildning på Hive Helsinki.",
+    "p2": "Därefter arbetade jag som full-stack-utvecklare på konkreta produkter, i internationella och helt remote miljöer.",
+    "p3": "Min resa lärde mig teknisk noggrannhet och vikten av kommunikation, feedback och teamwork.",
+    "meta": "Hive Helsinki · HyperIn · Arties · FullStack Open"
+  },
+  "value": {
+    "title": "Det jag gör bra",
+    "items": {
+      "maintainable": {
+        "title": "Underhållbara applikationer",
+        "body": "Tydlig arkitektur, läsbar kod, relevanta tester och kontrollerad teknisk skuld. Enkla, förståeliga lösningar som är lätta att utveckla.",
+        "meta": "Vue · Quasar · TypeScript · Tests"
+      },
+      "fullstack": {
+        "title": "Pragmatisk full-stack",
+        "body": "Gränssnitt, API, databas: jag väljer verktyg utifrån produktens kontext, inte hype.",
+        "meta": "Node · Deno · Go · Python · PostgreSQL"
+      },
+      "problemSolving": {
+        "title": "Problemlösning",
+        "body": "Stark grund i systemprogrammering och analys. Jag vill förstå på djupet innan jag bygger.",
+        "meta": "C · Algoritmer · SQL · Debugging"
+      }
+    }
+  },
+  "skills": {
+    "title": "Tekniska färdigheter",
+    "frontend": {
+      "title": "Frontend",
+      "body": "Vue.js · Quasar · TypeScript · HTML · CSS · React · Svelte · Flutter"
+    },
+    "backend": {
+      "title": "Backend",
+      "body": "Node.js · Deno · Go · Python · C · C# · Java"
+    },
+    "data": {
+      "title": "Data",
+      "body": "PostgreSQL · SQL · MongoDB · Redis · Typesense · Neon"
+    },
+    "tools": {
+      "title": "Verktyg & arbetssätt",
+      "body": "Git · Docker · Agile · Jira · Confluence · Testing · CI/CD · Performance · Figma"
+    }
+  },
+  "workStyle": {
+    "title": "Så arbetar jag",
+    "items": {
+      "quality": {
+        "title": "Kvalitet före hastighet",
+        "body": "Jag prioriterar tydlig, testad och begriplig kod framför snabba men sköra lösningar."
+      },
+      "collaboration": {
+        "title": "Samarbete & feedback",
+        "body": "Van vid samarbetsmiljöer och arbetar nära designers, PO och utvecklare."
+      },
+      "improvement": {
+        "title": "Kontinuerlig förbättring",
+        "body": "Jag lär mig kontinuerligt och förbättrar mina arbetssätt genom projekt och feedback."
+      },
+      "autonomy": {
+        "title": "Ansvarsfull autonomi",
+        "body": "Jag tar beslut, dokumenterar och håller mig i linje med produktmål."
+      }
+    }
+  },
+  "projects": {
+    "title": "Utvalda projekt",
+    "filter": {
+      "label": "Välj efter",
+      "all": "Alla",
+      "work": "Arbete",
+      "personal": "Personliga projekt"
+    },
+    "tags": {
+      "label": "Taggar"
+    },
+    "card": {
+      "imageAlt": "Förhandsvisning av {title}"
+    },
+    "empty": "Inga projekt matchar dessa filter."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Vill du prata om ett projekt, en roll eller ett samarbete?",
+    "cta": {
+      "email": "E-post",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "notFound": {
+    "message": "Sidan hittades inte.",
+    "cta": "Tillbaka till startsidan"
+  },
+  "projectDetail": {
+    "back": "Tillbaka",
+    "links": {
+      "repo": "Repo",
+      "demo": "Demo",
+      "code": "Visa kod",
+      "viewDemo": "Visa demo",
+      "download": "Ladda ner",
+      "contact": "Kontakta mig"
+    },
+    "notFound": {
+      "title": "Projektet hittades inte",
+      "body": "Länken verkar vara felaktig eller projektet finns inte längre.",
+      "cta": "Tillbaka till projekt"
+    },
+    "stack": "Stack",
+    "highlights": "Höjdpunkter",
+    "preview": "Förhandsvisning",
+    "imageAlt": "{title} — skärmdump",
+    "sections": {
+      "problem": "Problem",
+      "solution": "Lösning",
+      "details": "Detaljer",
+      "learnings": "Lärdomar",
+      "roadmap": "Roadmap"
+    },
+    "cta": {
+      "title": "Vill du diskutera?",
+      "body": "Jag kan gå igenom tekniska val, struktur och nästa steg.",
+      "button": "Kontakta mig"
+    }
+  }
+}

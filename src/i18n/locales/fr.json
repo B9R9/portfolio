@@ -1,0 +1,160 @@
+{
+  "localisation": "Localisation",
+  "common": {
+    "loading": "Chargement"
+  },
+  "nav": {
+    "downloadCv": "Télécharger CV",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "footer": {
+    "builtWith": "Réalisé avec Vue + Tailwind"
+  },
+  "languageSelector": {
+    "aria": "Sélecteur de langue"
+  },
+  "hero": {
+    "title": "Je construis des applications claires, maintenables et utiles.",
+    "subtitle1": "Développeur logiciel full-stack, orienté produit, avec une attention particulière à la qualité du code, à la lisibilité et à l’impact réel des solutions.",
+    "subtitle2": "Formé à Hive Helsinki et fort d’expériences en environnement professionnel, je conçois des applications web et mobiles pensées pour évoluer dans le temps.",
+    "cta": {
+      "projects": "Voir mes projets",
+      "contact": "Me contacter"
+    },
+    "cv": {
+      "view": "Voir CV",
+      "download": "Télécharger CV"
+    },
+    "meta": "Helsinki, Finlande · Full-stack · Vue / TypeScript · Go / Node · Testing"
+  },
+  "journey": {
+    "title": "Mon parcours",
+    "subtitle": "Formation, expérience, contexte.",
+    "p1": "Ancien team leader reconverti développeur, j’ai suivi une formation exigeante en ingénierie logicielle à Hive Helsinki.",
+    "p2": "J’ai ensuite travaillé comme développeur full-stack sur des produits concrets, en contexte international et en full remote.",
+    "p3": "Mon parcours m’a appris autant la rigueur technique que l’importance de la communication, du feedback et du travail en équipe.",
+    "meta": "Hive Helsinki · HyperIn · Arties · FullStack Open"
+  },
+  "value": {
+    "title": "Ce que je fais bien",
+    "items": {
+      "maintainable": {
+        "title": "Applications maintenables",
+        "body": "Architecture claire, code lisible, tests pertinents et dette technique maîtrisée. Des solutions simples, compréhensibles et faciles à faire évoluer.",
+        "meta": "Vue · Quasar · TypeScript · Tests"
+      },
+      "fullstack": {
+        "title": "Full-stack pragmatique",
+        "body": "Interface, API, base de données : je choisis les outils selon le contexte produit, pas par effet de mode.",
+        "meta": "Node · Deno · Go · Python · PostgreSQL"
+      },
+      "problemSolving": {
+        "title": "Résolution de problèmes",
+        "body": "Base solide en programmation système et analyse. J’aime comprendre en profondeur avant de construire.",
+        "meta": "C · Algorithmique · SQL · Debugging"
+      }
+    }
+  },
+  "skills": {
+    "title": "Compétences techniques",
+    "frontend": {
+      "title": "Frontend",
+      "body": "Vue.js · Quasar · TypeScript · HTML · CSS · React · Svelte · Flutter"
+    },
+    "backend": {
+      "title": "Backend",
+      "body": "Node.js · Deno · Go · Python · C · C# · Java"
+    },
+    "data": {
+      "title": "Data",
+      "body": "PostgreSQL · SQL · MongoDB · Redis · Typesense · Neon"
+    },
+    "tools": {
+      "title": "Outils & pratiques",
+      "body": "Git · Docker · Agile · Jira · Confluence · Testing · CI/CD · Performance · Figma"
+    }
+  },
+  "workStyle": {
+    "title": "Comment je travaille",
+    "items": {
+      "quality": {
+        "title": "Qualité avant vitesse",
+        "body": "Je privilégie un code clair, testé et compréhensible plutôt qu’une solution rapide mais fragile."
+      },
+      "collaboration": {
+        "title": "Collaboration & feedback",
+        "body": "Habitué aux environnements collaboratifs, je travaille en lien avec designers, PO et devs."
+      },
+      "improvement": {
+        "title": "Amélioration continue",
+        "body": "J’apprends en continu et j’améliore mes pratiques au fil des projets et retours."
+      },
+      "autonomy": {
+        "title": "Autonomie responsable",
+        "body": "Je prends des décisions, je documente, et je reste aligné avec les objectifs produit."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projets sélectionnés",
+    "filter": {
+      "label": "Sélectionner par",
+      "all": "Tous",
+      "work": "Travail",
+      "personal": "Projets personnels"
+    },
+    "tags": {
+      "label": "Tags"
+    },
+    "card": {
+      "imageAlt": "Aperçu de {title}"
+    },
+    "empty": "Aucun projet ne correspond à ces filtres."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Envie d’échanger sur un projet, un poste, ou une collaboration ?",
+    "cta": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "notFound": {
+    "message": "Page introuvable.",
+    "cta": "Retour à l’accueil"
+  },
+  "projectDetail": {
+    "back": "Retour",
+    "links": {
+      "repo": "Repo",
+      "demo": "Demo",
+      "code": "Voir le code",
+      "viewDemo": "Voir la démo",
+      "download": "Télécharger",
+      "contact": "Me contacter"
+    },
+    "notFound": {
+      "title": "Projet introuvable",
+      "body": "Le lien semble incorrect ou le projet n’existe plus.",
+      "cta": "Retour aux projets"
+    },
+    "stack": "Stack",
+    "highlights": "Points clés",
+    "preview": "Aperçu",
+    "imageAlt": "{title} — capture d’écran",
+    "sections": {
+      "problem": "Problème",
+      "solution": "Solution",
+      "details": "Détails",
+      "learnings": "Ce que j’en retiens",
+      "roadmap": "Roadmap"
+    },
+    "cta": {
+      "title": "Tu veux en discuter ?",
+      "body": "Je peux détailler les choix techniques, la structure, et les prochaines étapes.",
+      "button": "Me contacter"
+    }
+  }
+}

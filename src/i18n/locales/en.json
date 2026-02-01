@@ -1,0 +1,160 @@
+{
+  "localisation": "Localization",
+  "common": {
+    "loading": "Loading"
+  },
+  "nav": {
+    "downloadCv": "Download CV",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "footer": {
+    "builtWith": "Built with Vue + Tailwind"
+  },
+  "languageSelector": {
+    "aria": "Language selector"
+  },
+  "hero": {
+    "title": "I build clear, maintainable, and useful applications.",
+    "subtitle1": "Full-stack software developer, product-oriented, with a strong focus on code quality, readability, and real-world impact.",
+    "subtitle2": "Trained at Hive Helsinki and experienced in professional environments, I design web and mobile apps built to evolve over time.",
+    "cta": {
+      "projects": "See my projects",
+      "contact": "Contact me"
+    },
+    "cv": {
+      "view": "View CV",
+      "download": "Download CV"
+    },
+    "meta": "Helsinki, Finland · Full-stack · Vue / TypeScript · Go / Node · Testing"
+  },
+  "journey": {
+    "title": "My journey",
+    "subtitle": "Training, experience, context.",
+    "p1": "Former team leader turned developer, I completed a demanding software engineering program at Hive Helsinki.",
+    "p2": "I then worked as a full-stack developer on real products, in international and fully remote contexts.",
+    "p3": "My path taught me technical rigor as well as the importance of communication, feedback, and teamwork.",
+    "meta": "Hive Helsinki · HyperIn · Arties · FullStack Open"
+  },
+  "value": {
+    "title": "What I do well",
+    "items": {
+      "maintainable": {
+        "title": "Maintainable applications",
+        "body": "Clear architecture, readable code, relevant tests, and controlled technical debt. Simple, understandable solutions that are easy to evolve.",
+        "meta": "Vue · Quasar · TypeScript · Tests"
+      },
+      "fullstack": {
+        "title": "Pragmatic full-stack",
+        "body": "Interface, API, database: I choose tools based on product context, not hype.",
+        "meta": "Node · Deno · Go · Python · PostgreSQL"
+      },
+      "problemSolving": {
+        "title": "Problem solving",
+        "body": "Strong foundation in systems programming and analysis. I like to understand deeply before building.",
+        "meta": "C · Algorithms · SQL · Debugging"
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical skills",
+    "frontend": {
+      "title": "Frontend",
+      "body": "Vue.js · Quasar · TypeScript · HTML · CSS · React · Svelte · Flutter"
+    },
+    "backend": {
+      "title": "Backend",
+      "body": "Node.js · Deno · Go · Python · C · C# · Java"
+    },
+    "data": {
+      "title": "Data",
+      "body": "PostgreSQL · SQL · MongoDB · Redis · Typesense · Neon"
+    },
+    "tools": {
+      "title": "Tools & practices",
+      "body": "Git · Docker · Agile · Jira · Confluence · Testing · CI/CD · Performance · Figma"
+    }
+  },
+  "workStyle": {
+    "title": "How I work",
+    "items": {
+      "quality": {
+        "title": "Quality over speed",
+        "body": "I prioritize clear, tested, understandable code over fast but fragile solutions."
+      },
+      "collaboration": {
+        "title": "Collaboration & feedback",
+        "body": "Used to collaborative environments, I work closely with designers, PMs, and devs."
+      },
+      "improvement": {
+        "title": "Continuous improvement",
+        "body": "I learn continuously and improve my practices through projects and feedback."
+      },
+      "autonomy": {
+        "title": "Responsible autonomy",
+        "body": "I make decisions, document, and stay aligned with product goals."
+      }
+    }
+  },
+  "projects": {
+    "title": "Selected projects",
+    "filter": {
+      "label": "Selected by",
+      "all": "All",
+      "work": "Work",
+      "personal": "Personal projects"
+    },
+    "tags": {
+      "label": "Tags"
+    },
+    "card": {
+      "imageAlt": "Preview of {title}"
+    },
+    "empty": "No projects match these filters."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Want to discuss a project, a role, or a collaboration?",
+    "cta": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "notFound": {
+    "message": "Page not found.",
+    "cta": "Back to home"
+  },
+  "projectDetail": {
+    "back": "Back",
+    "links": {
+      "repo": "Repo",
+      "demo": "Demo",
+      "code": "View code",
+      "viewDemo": "View demo",
+      "download": "Download",
+      "contact": "Contact me"
+    },
+    "notFound": {
+      "title": "Project not found",
+      "body": "The link looks incorrect or the project no longer exists.",
+      "cta": "Back to projects"
+    },
+    "stack": "Stack",
+    "highlights": "Highlights",
+    "preview": "Preview",
+    "imageAlt": "{title} — screenshot",
+    "sections": {
+      "problem": "Problem",
+      "solution": "Solution",
+      "details": "Details",
+      "learnings": "Key learnings",
+      "roadmap": "Roadmap"
+    },
+    "cta": {
+      "title": "Want to discuss?",
+      "body": "I can walk through the technical choices, the structure, and the next steps.",
+      "button": "Contact me"
+    }
+  }
+}

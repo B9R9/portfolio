@@ -13,7 +13,9 @@
               :alt="$t('projects.card.imageAlt', { title: projectTitle })"
               class="absolute inset-0 h-full w-full object-cover"
             />
-            <div v-else class="absolute inset-0 bg-white/5" />
+            <div v-else class="absolute inset-0 flex items-center justify-center bg-white/5">
+              <span class="text-5xl font-semibold text-white/70">{{ projectInitial }}</span>
+            </div>
           </div>
           <div
             class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-3 text-xs text-white/80"
@@ -49,6 +51,8 @@ const { t } = useI18n()
 const projectTitle = computed(() =>
   props.project.titleKey ? t(props.project.titleKey) : props.project.title,
 )
+
+const projectInitial = computed(() => projectTitle.value.trim().charAt(0).toUpperCase())
 
 const projectTagline = computed(() =>
   props.project.taglineKey ? t(props.project.taglineKey) : props.project.tagline,

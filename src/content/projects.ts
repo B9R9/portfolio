@@ -298,7 +298,12 @@ export const PROJECTS: Project[] = [
       'Collaborating effectively with product and backend teams',
     ],
     learningsKey: 'projectsData.hyperinPlatform.learnings',
-    imageUrl: ['/images/hyperin/logo.jpeg'],
+    imageUrl: [
+      '/images/hyperin/logo.jpeg',
+      '/images/hyperin/hyperin1.png',
+      '/images/hyperin/hyperin2.png',
+      '/images/hyperin/hyperin3.png',
+    ],
     demoUrl: 'https://www.hyperin.com/',
   },
   {

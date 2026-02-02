@@ -135,16 +135,16 @@
                   {{ $t('projectDetail.preview') }}
                 </div>
 
-                <div class="grid sm:grid-cols-2 gap-4">
+                <div class="scrollbar-subtle flex gap-4 overflow-x-auto pb-2">
                   <figure
-                    v-for="src in project.imageUrl.slice(1, 4)"
+                    v-for="src in project.imageUrl.slice(1)"
                     :key="src"
-                    class="rounded-lg overflow-hidden border border-white/10 bg-white/5"
+                    class="shrink-0 rounded-lg overflow-hidden border border-white/10 bg-white/5 p-2"
                   >
                     <img
                       :src="src"
                       :alt="$t('projectDetail.imageAlt', { title: projectTitle })"
-                      class="w-full h-auto block"
+                      class="block h-auto max-h-56 w-auto max-w-[22rem]"
                       loading="lazy"
                     />
                   </figure>

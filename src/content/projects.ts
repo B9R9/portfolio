@@ -123,8 +123,12 @@ export const PROJECTS: Project[] = [
 
     imageUrl: [
       '/images/projects/thought/logo.png',
-      '/images/projects/thought/list.png',
-      '/images/projects/thought/settings.png',
+      '/images/projects/thought/image1.jpg',
+      '/images/projects/thought/image6.jpg',
+      '/images/projects/thought/image2.jpg',
+      '/images/projects/thought/image4.jpg',
+      '/images/projects/thought/image3.jpg',
+      '/images/projects/thought/image5.jpg',
     ],
 
     repoUrl: 'https://github.com/B9R9/Thoughts?tab=readme-ov-file#readme',

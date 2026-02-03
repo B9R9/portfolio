@@ -147,6 +147,55 @@
         "Optional advanced modules (AI assistance, voice input)"
       ]
     },
+    "jobAppTracker": {
+      "title": "Job Application Tracker",
+      "tagline": "A web app to organize and analyze job applications.",
+      "problem": "Managing job applications quickly becomes fragmented: multiple documents, imprecise tracking, and a lack of overall visibility.",
+      "solution": "I built a centralized application to structure and track applications clearly, while laying solid foundations for future evolutions.",
+      "highlights": [
+        "Structured tracking of applications",
+        "Clear view of documents used",
+        "Architecture designed to evolve"
+      ],
+      "description": [
+        "This web application groups and tracks job applications in a single, readable interface.",
+        "The project emphasizes data clarity, code maintainability, and a backend architecture designed to evolve progressively."
+      ],
+      "learnings": [
+        "Designing a product-oriented architecture",
+        "Structuring a clear API with FastAPI",
+        "Organizing and scaling a Vue front-end"
+      ],
+      "roadmap": [
+        "Continuous improvement of the user experience",
+        "Advanced features for organization and analysis"
+      ]
+    },
+    "dashboardQuasar": {
+      "title": "Dashboard UI with Quasar",
+      "tagline": "A modern, modular dashboard built with Quasar and Vue.",
+      "problem": "Quickly building a modern dashboard often requires structuring layouts, navigation, and components correctly from the start.",
+      "solution": "I built a front‑end dashboard with Quasar to explore its UI patterns, structure a reusable base, and test different layout and component approaches.",
+      "highlights": [
+        "Responsive layouts with Quasar",
+        "Clear, structured navigation",
+        "Reusable UI components"
+      ],
+      "description": [
+        "This project is a front‑end dashboard built with Quasar and Vue, used as a playground for designing modern and maintainable interfaces.",
+        "It focuses on layout structure, navigation, and component organization in a mid‑scale front‑end application."
+      ],
+      "learnings": [
+        "In‑depth onboarding of Quasar",
+        "Structuring a modular dashboard",
+        "Managing layouts and reusable components"
+      ],
+      "roadmap": [
+        "Add new views and components",
+        "Improve visual consistency",
+        "Explore more complex use cases"
+      ]
+    },
     "hivemindLlmPlatform": {
       "title": "HiveMind",
       "tagline": "A modular LLM platform with vector search and metadata-driven reasoning",

@@ -146,6 +146,55 @@
         "Modules avancés optionnels (assistance IA, saisie vocale)"
       ]
     },
+    "jobAppTracker": {
+      "title": "Job Application Tracker",
+      "tagline": "Une web app pour organiser et analyser ses candidatures.",
+      "problem": "La gestion des candidatures devient vite fragmentée : documents multiples, suivi imprécis et manque de visibilité globale.",
+      "solution": "J’ai développé une application centralisée permettant de structurer et suivre ses candidatures de manière claire, tout en posant des bases solides pour des évolutions futures.",
+      "highlights": [
+        "Suivi structuré des candidatures",
+        "Vision claire des documents utilisés",
+        "Architecture pensée pour évoluer"
+      ],
+      "description": [
+        "Cette application web permet de regrouper et suivre des candidatures d'emploi dans une interface unique et lisible.",
+        "Le projet met l’accent sur la clarté des données, la maintenabilité du code et une architecture backend conçue pour évoluer progressivement."
+      ],
+      "learnings": [
+        "Conception d’une architecture orientée produit",
+        "Structuration d’une API claire avec FastAPI",
+        "Organisation et lisibilité d’un front Vue à l’échelle"
+      ],
+      "roadmap": [
+        "Amélioration continue de l’expérience utilisateur",
+        "Fonctionnalités avancées autour de l’organisation et de l’analyse"
+      ]
+    },
+    "dashboardQuasar": {
+      "title": "Dashboard UI avec Quasar",
+      "tagline": "Un dashboard moderne et modulaire construit avec Quasar et Vue.",
+      "problem": "Mettre en place rapidement un dashboard moderne nécessite souvent de structurer correctement les layouts, la navigation et les composants dès le départ.",
+      "solution": "J’ai développé un dashboard front-end avec Quasar afin d’explorer ses patterns UI, structurer une base réutilisable et tester différentes approches de layout et de composants.",
+      "highlights": [
+        "Layouts responsives avec Quasar",
+        "Navigation claire et structurée",
+        "Composants UI réutilisables"
+      ],
+      "description": [
+        "Ce projet est un dashboard front-end développé avec Quasar et Vue, servant de terrain d’expérimentation pour la conception d’interfaces modernes et maintenables.",
+        "Il met l’accent sur la structuration des layouts, la navigation, et l’organisation des composants dans une application front-end à moyenne échelle."
+      ],
+      "learnings": [
+        "Prise en main approfondie de Quasar",
+        "Structuration d’un dashboard modulaire",
+        "Gestion des layouts et composants réutilisables"
+      ],
+      "roadmap": [
+        "Ajout de nouvelles vues et composants",
+        "Amélioration de la cohérence visuelle",
+        "Exploration de cas d’usage plus complexes"
+      ]
+    },
     "hivemindLlmPlatform": {
       "title": "HiveMind",
       "tagline": "Une plateforme LLM modulaire avec recherche vectorielle et raisonnement guidé par les métadonnées",

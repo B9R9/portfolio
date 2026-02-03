@@ -146,6 +146,55 @@
         "Valfria avancerade moduler (AI‑assistent, röstinmatning)"
       ]
     },
+    "jobAppTracker": {
+      "title": "Job Application Tracker",
+      "tagline": "En webbapp för att organisera och analysera jobbansökningar.",
+      "problem": "Hantering av jobbansökningar blir snabbt fragmenterad: flera dokument, otydlig uppföljning och brist på helhetsöverblick.",
+      "solution": "Jag byggde en centraliserad applikation för att strukturera och följa ansökningar på ett tydligt sätt, samtidigt som den lägger en stabil grund för framtida utveckling.",
+      "highlights": [
+        "Strukturerad uppföljning av ansökningar",
+        "Tydlig översikt över använda dokument",
+        "Arkitektur som är byggd för att utvecklas"
+      ],
+      "description": [
+        "Den här webbapplikationen samlar och följer jobbansökningar i ett enda, lättläst gränssnitt.",
+        "Projektet betonar datatydlighet, kodens underhållbarhet och en backend‑arkitektur som är utformad för gradvis utveckling."
+      ],
+      "learnings": [
+        "Design av en produktorienterad arkitektur",
+        "Strukturering av ett tydligt API med FastAPI",
+        "Organisering och skalning av en Vue‑frontend"
+      ],
+      "roadmap": [
+        "Kontinuerlig förbättring av användarupplevelsen",
+        "Avancerade funktioner för organisering och analys"
+      ]
+    },
+    "dashboardQuasar": {
+      "title": "Dashboard‑UI med Quasar",
+      "tagline": "En modern och modulär dashboard byggd med Quasar och Vue.",
+      "problem": "Att snabbt bygga en modern dashboard kräver ofta att layouts, navigation och komponenter struktureras rätt från början.",
+      "solution": "Jag byggde en front‑end‑dashboard med Quasar för att utforska dess UI‑mönster, skapa en återanvändbar bas och testa olika layout‑ och komponentupplägg.",
+      "highlights": [
+        "Responsiva layouter med Quasar",
+        "Tydlig och strukturerad navigation",
+        "Återanvändbara UI‑komponenter"
+      ],
+      "description": [
+        "Det här projektet är en front‑end‑dashboard byggd med Quasar och Vue, som fungerar som en experimentyta för modern och underhållbar UI‑design.",
+        "Fokus ligger på layout‑struktur, navigation och komponentorganisation i en medelstor front‑end‑applikation."
+      ],
+      "learnings": [
+        "Fördjupad onboarding av Quasar",
+        "Strukturering av en modulär dashboard",
+        "Hantering av layouter och återanvändbara komponenter"
+      ],
+      "roadmap": [
+        "Lägga till nya vyer och komponenter",
+        "Förbättra visuell konsekvens",
+        "Utforska mer komplexa användningsfall"
+      ]
+    },
     "hivemindLlmPlatform": {
       "title": "HiveMind",
       "tagline": "En modulär LLM‑plattform med vektorsökning och metadatadriven resonering",

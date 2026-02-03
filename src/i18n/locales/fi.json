@@ -146,6 +146,55 @@
         "Valinnaiset edistyneet moduulit (AI‑avustus, äänisyöttö)"
       ]
     },
+    "jobAppTracker": {
+      "title": "Job Application Tracker",
+      "tagline": "Web‑sovellus työhakemusten järjestämiseen ja analysointiin.",
+      "problem": "Työhakemusten hallinta pirstaloituu nopeasti: useita dokumentteja, epätarkka seuranta ja heikko kokonaisnäkyvyys.",
+      "solution": "Rakensin keskitetyn sovelluksen, joka jäsentää ja seuraa hakemuksia selkeästi, sekä luo vankan pohjan tuleville kehityksille.",
+      "highlights": [
+        "Jäsennelty hakemusten seuranta",
+        "Selkeä näkymä käytettyihin dokumentteihin",
+        "Arkkitehtuuri suunniteltu kehittymään"
+      ],
+      "description": [
+        "Tämä web‑sovellus kokoaa ja seuraa työhakemuksia yhdessä selkeässä käyttöliittymässä.",
+        "Projekti korostaa datan selkeyttä, koodin ylläpidettävyyttä ja backend‑arkkitehtuuria, joka on suunniteltu kehittymään vaiheittain."
+      ],
+      "learnings": [
+        "Tuotelähtöisen arkkitehtuurin suunnittelu",
+        "Selkeän API:n rakentaminen FastAPI:lla",
+        "Vue‑frontin organisointi ja skaalautuminen"
+      ],
+      "roadmap": [
+        "Käyttökokemuksen jatkuva parantaminen",
+        "Edistyneet ominaisuudet organisointiin ja analysointiin"
+      ]
+    },
+    "dashboardQuasar": {
+      "title": "Dashboard‑UI Quasarilla",
+      "tagline": "Moderni ja modulaarinen dashboard Quasarilla ja Vuella.",
+      "problem": "Modernin dashboardin nopea rakentaminen vaatii usein layoutien, navigaation ja komponenttien oikean rakenteen heti alusta.",
+      "solution": "Rakensin Quasarilla front‑end‑dashboardin tutkiakseni sen UI‑patternit, rakentaakseni uudelleenkäytettävän pohjan ja testatakseni erilaisia layout‑ ja komponenttiratkaisuja.",
+      "highlights": [
+        "Responsiiviset layoutit Quasarilla",
+        "Selkeä ja jäsennelty navigaatio",
+        "Uudelleenkäytettävät UI‑komponentit"
+      ],
+      "description": [
+        "Tämä projekti on Quasarilla ja Vuella rakennettu front‑end‑dashboard, joka toimii kokeilualustana modernien ja ylläpidettävien käyttöliittymien suunnittelulle.",
+        "Se painottaa layout‑rakennetta, navigaatiota ja komponenttien organisointia keskikokoisessa front‑end‑sovelluksessa."
+      ],
+      "learnings": [
+        "Quasarin syvällinen haltuunotto",
+        "Modulaarisen dashboardin jäsentäminen",
+        "Layoutien ja uudelleenkäytettävien komponenttien hallinta"
+      ],
+      "roadmap": [
+        "Uusien näkymien ja komponenttien lisääminen",
+        "Visuaalisen johdonmukaisuuden parantaminen",
+        "Monimutkaisempien käyttötapausten tutkiminen"
+      ]
+    },
     "hivemindLlmPlatform": {
       "title": "HiveMind",
       "tagline": "Modulaarinen LLM‑alusta, jossa on vektorihaku ja metadatoihin perustuva päättely",

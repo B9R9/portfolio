@@ -44,7 +44,10 @@ const selectedTags = ref<string[]>([])
 const filtered = computed(() => {
   return PROJECTS.filter((p) => {
     const matchesType = type.value === 'all' ? true : p.type === type.value
-    const matchesTags = selectedTags.value.every((tag) => p.tags.includes(tag))
+    const matchesTags =
+      selectedTags.value.length === 0
+        ? true
+        : selectedTags.value.some((tag) => p.tags.includes(tag))
     return matchesType && matchesTags
   })
 })
@@ -77,5 +80,4 @@ watch(selectedTags, () => {
     isFiltering.value = false
   }, 1000)
 })
-
 </script>

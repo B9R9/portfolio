@@ -36,35 +36,50 @@ export const PROJECTS: Project[] = [
   {
     slug: 'job-app-tracker',
     title: 'Job Application Tracker',
-    tagline: 'Une web app pour organiser et comparer ses candidatures.',
+    titleKey: 'projectsData.jobAppTracker.title',
+    tagline: 'Une web app pour organiser et analyser ses candidatures.',
+    taglineKey: 'projectsData.jobAppTracker.tagline',
     type: 'personal',
-    tags: ['Personnel', 'Web App', 'Full-Stack', 'Vue'],
+    tags: ['Web', 'Full-stack', 'Productivity'],
+
     stack: ['Vue', 'FastAPI', 'PostgreSQL'],
+
     problem:
-      "Suivre ses candidatures implique souvent des fichiers éparpillés, des CV différents, et peu de visibilité sur l'historique et l'avancement.",
+      'La gestion des candidatures devient vite fragmentée : documents multiples, suivi imprécis et manque de visibilité globale.',
+    problemKey: 'projectsData.jobAppTracker.problem',
+
     solution:
-      'J’ai conçu une application centralisée pour suivre chaque candidature, comparer les documents utilisés, et préparer l’ajout futur de fonctionnalités avancées (tags, scoring, rappels).',
+      'J’ai développé une application centralisée permettant de structurer et suivre ses candidatures de manière claire, tout en posant des bases solides pour des évolutions futures.',
+    solutionKey: 'projectsData.jobAppTracker.solution',
+
     highlights: [
-      'Vue claire des candidatures et statuts',
-      'Comparaison de CV / lettres',
-      'Structure pensée pour évoluer (tags, scoring, historique)',
+      'Suivi structuré des candidatures',
+      'Vision claire des documents utilisés',
+      'Architecture pensée pour évoluer',
     ],
+    highlightsKey: 'projectsData.jobAppTracker.highlights',
+
     description: [
-      "Cette application web permet de suivre ses candidatures d'emploi en un seul endroit. Elle offre une vue d'ensemble claire des postes postulés, de leurs statuts, et permet de comparer facilement les CV et lettres de motivation utilisés pour chaque candidature.",
-      "L'interface utilisateur est construite avec Vue.js pour une expérience fluide, tandis que le backend utilise FastAPI et PostgreSQL pour gérer les données de manière efficace.",
+      "Cette application web permet de regrouper et suivre des candidatures d'emploi dans une interface unique et lisible.",
+      'Le projet met l’accent sur la clarté des données, la maintenabilité du code et une architecture backend conçue pour évoluer progressivement.',
     ],
+    descriptionKey: 'projectsData.jobAppTracker.description',
+
     learnings: [
-      'Structurer une application pour supporter des évolutions produit futures',
-      'Concevoir une API claire et évolutive avec FastAPI',
-      'Améliorer la lisibilité et la maintenabilité du front avec Vue',
+      'Conception d’une architecture orientée produit',
+      'Structuration d’une API claire avec FastAPI',
+      'Organisation et lisibilité d’un front Vue à l’échelle',
     ],
+    learningsKey: 'projectsData.jobAppTracker.learnings',
+
     roadmap: [
-      'Ajout de notifications et rappels',
-      'Extension navigateur pour capturer les offres',
-      'Partage de candidatures entre utilisateurs',
+      'Amélioration continue de l’expérience utilisateur',
+      'Fonctionnalités avancées autour de l’organisation et de l’analyse',
     ],
-    imageUrl: ['/images/projects/job-app-tracker-1.png'],
-    repoUrl: 'https://github.com/yourname/yourrepo',
+    roadmapKey: 'projectsData.jobAppTracker.roadmap',
+
+    imageUrl: [],
+    repoUrl: 'https://github.com/B9R9/NextStep-Docs',
     demoUrl: '',
     downloadUrl: '',
   },
@@ -76,7 +91,8 @@ export const PROJECTS: Project[] = [
     taglineKey: 'projectsData.thought.tagline',
     type: 'personal',
 
-    tags: ['Mobile', 'Privacy-first', 'Offline', 'POC', 'Flutter'],
+    tags: ['Mobile', 'Privacy-first', 'Productivity'],
+
     stack: ['Flutter', 'Dart', 'Hive'],
 
     problem:
@@ -143,9 +159,9 @@ export const PROJECTS: Project[] = [
     titleKey: 'projectsData.hivemindLlmPlatform.title',
     tagline: 'A modular LLM platform with vector search and metadata-driven reasoning',
     taglineKey: 'projectsData.hivemindLlmPlatform.tagline',
-    type: 'ongoing',
+    type: 'personal',
 
-    tags: ['LLM', 'AI', 'Vector Search', 'RAG', 'Backend Architecture', 'Developer Tooling'],
+    tags: ['AI', 'Backend', 'DevTools'],
 
     stack: [
       'FastAPI',
@@ -218,7 +234,7 @@ export const PROJECTS: Project[] = [
     taglineKey: 'projectsData.artiesApp.tagline',
     type: 'work',
 
-    tags: ['Mobile App', 'Fullstack', 'Flutter', 'Node.js', 'TypeScript', 'PostgreSQL', 'REST API'],
+    tags: ['Mobile', 'Full-stack', 'Events'],
     stack: ['Flutter', 'Node.js', 'TypeScript', 'PostgreSQL', 'REST API', 'Testing', 'CI/CD'],
 
     problem:
@@ -268,7 +284,7 @@ export const PROJECTS: Project[] = [
     taglineKey: 'projectsData.hyperinPlatform.tagline',
     type: 'work',
 
-    tags: ['SaaS', 'Web App', 'Vue.js', 'Quasar', 'JavaScript', 'Node.js', 'REST API'],
+    tags: ['Web', 'SaaS', 'Product'],
     stack: ['Vue.js', 'Quasar', 'JavaScript', 'Node.js', 'REST API', 'Testing', 'Agile'],
 
     problem:
@@ -311,64 +327,53 @@ export const PROJECTS: Project[] = [
     demoUrl: 'https://www.hyperin.com/',
   },
   {
-    slug: 'tenant-dashboard',
-    title: 'tenant-dashboard',
-    tagline:
-      'A modular RAG backend that turns user queries into vectors, retrieves relevant context with metadata filtering, and generates grounded answers.',
-
-    type: 'work',
-    tags: ['RAG', 'LLM', 'Vector Search', 'FastAPI', 'Portfolio'],
-    stack: [
-      'FastAPI',
-      'Python',
-      'Vector DB (Qdrant/Chroma)',
-      'Embeddings (e.g. bge / OpenAI-compatible)',
-      'React',
-      'Tailwind CSS',
-      'Docker',
-    ],
+    slug: 'dashboard-quasar',
+    title: 'Dashboard UI avec Quasar',
+    titleKey: 'projectsData.dashboardQuasar.title',
+    tagline: 'Un dashboard moderne et modulaire construit avec Quasar et Vue.',
+    taglineKey: 'projectsData.dashboardQuasar.tagline',
+    type: 'personal',
+    tags: ['Web', 'Frontend', 'UI'],
+    stack: ['Vue', 'Quasar'],
 
     problem:
-      'I needed a reliable way to answer user questions based on my own documents and project knowledge, without hallucinations. Traditional keyword search wasn’t enough, and I also wanted metadata-aware filtering (topic, recency, type of source) to improve precision.',
+      'Mettre en place rapidement un dashboard moderne nécessite souvent de structurer correctement les layouts, la navigation et les composants dès le départ.',
+    problemKey: 'projectsData.dashboardQuasar.problem',
+
     solution:
-      'I built a modular RAG pipeline: the user query is embedded, searched in a vector store, refined with metadata filters/boosting, then a response is generated with citations. Internal endpoints expose each step (embed/search/rerank/generate) so the system stays testable and evolvable.',
+      'J’ai développé un dashboard front-end avec Quasar afin d’explorer ses patterns UI, structurer une base réutilisable et tester différentes approches de layout et de composants.',
+    solutionKey: 'projectsData.dashboardQuasar.solution',
 
     highlights: [
-      'End-to-end RAG pipeline with metadata-aware retrieval',
-      'Separation of concerns: embed → retrieve → refine → generate',
-      'Configurable retrieval (filters/boosting) to improve relevance',
-      'Response generation designed for grounding + citations',
-      'Backend structured as modules/services (no premature microservices)',
+      'Layouts responsives avec Quasar',
+      'Navigation claire et structurée',
+      'Composants UI réutilisables',
     ],
+    highlightsKey: 'projectsData.dashboardQuasar.highlights',
 
     description: [
-      'HiveMind is a portfolio-oriented assistant that can answer questions using a curated knowledge base.',
-      'It supports semantic search via vector embeddings, plus metadata filtering to narrow results by source type, topic, or recency.',
-      'The API exposes internal endpoints for experimentation (embedding, indexing, retrieval, reranking, and final generation).',
+      'Ce projet est un dashboard front-end développé avec Quasar et Vue, servant de terrain d’expérimentation pour la conception d’interfaces modernes et maintenables.',
+      'Il met l’accent sur la structuration des layouts, la navigation, et l’organisation des composants dans une application front-end à moyenne échelle.',
     ],
+    descriptionKey: 'projectsData.dashboardQuasar.description',
 
     learnings: [
-      'Metadata filtering is a big quality lever for RAG: it reduces noise and improves answer faithfulness.',
-      'Keeping retrieval and generation decoupled makes testing far easier (unit tests for retrieval quality, integration tests for the whole flow).',
-      'A modular monolith is often the best starting point before splitting into microservices.',
+      'Prise en main approfondie de Quasar',
+      'Structuration d’un dashboard modulaire',
+      'Gestion des layouts et composants réutilisables',
     ],
+    learningsKey: 'projectsData.dashboardQuasar.learnings',
 
     roadmap: [
-      'Add reranking (cross-encoder) for better top-k selection',
-      'Implement evaluation harness (golden Q/A, retrieval metrics, regression tests)',
-      'Add observability: request tracing + retrieval debugging UI',
-      'Streaming responses + source previews in the UI',
-      'Multi-tenant knowledge bases (per user / per workspace)',
+      'Ajout de nouvelles vues et composants',
+      'Amélioration de la cohérence visuelle',
+      'Exploration de cas d’usage plus complexes',
     ],
+    roadmapKey: 'projectsData.dashboardQuasar.roadmap',
 
-    imageUrl: [
-      '/images/projects/hivemind/cover.png',
-      '/images/projects/hivemind/architecture.png',
-      '/images/projects/hivemind/ui.png',
-    ],
-
-    repoUrl: 'https://github.com/<your-username>/hivemind',
-    demoUrl: 'https://<your-demo-domain>',
-    downloadUrl: 'https://<your-download-link>',
+    imageUrl: [],
+    repoUrl: 'https://github.com/B9R9/dashboard-quasar',
+    demoUrl: '',
+    downloadUrl: '',
   },
 ]

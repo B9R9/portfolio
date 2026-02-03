@@ -1,7 +1,7 @@
 <template>
-  <div class="mb-4 flex items-start gap-4 text-sm">
+  <div class="mb-4 flex flex-col gap-3 text-sm sm:flex-row sm:items-start sm:gap-4">
     <div class="text-white/50">{{ $t('projects.tags.label') }}</div>
-    <div class="flex flex-wrap gap-2">
+    <div class="scrollbar-subtle flex gap-2 overflow-x-auto pb-1 sm:flex-wrap sm:overflow-visible sm:pb-0">
       <TagPillButton
         v-for="tag in tags"
         :key="tag"

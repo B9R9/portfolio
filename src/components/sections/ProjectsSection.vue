@@ -4,10 +4,13 @@
       <h2 class="mb-8">{{ $t('projects.title') }}</h2>
       <!-- Filter -->
       <ProjectTypeSelect v-model="type" />
-      <ProjectTagsFilter v-model="selectedTags" :tags="tags" />
+      <ProjectTagsFilter v-model="selectedTags" :tags="tags" class="hidden sm:block" />
 
       <div class="relative">
-        <div class="grid grid-cols-4 gap-4" :class="{ 'opacity-40': isFiltering }">
+        <div
+          class="scrollbar-subtle flex gap-4 overflow-x-auto pb-2 sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:pb-0 lg:grid-cols-4"
+          :class="{ 'opacity-40': isFiltering }"
+        >
           <ProjectCard v-for="p in filtered" :key="p.slug" :project="p" />
         </div>
         <div

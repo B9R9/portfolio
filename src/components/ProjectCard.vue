@@ -1,7 +1,7 @@
 <template>
   <div v-if="project" @click="$router.push(`/projects/${project.slug}`)" class="cursor-pointer">
     <article
-      class="col-span-4 flex flex-col md:col-span-2 lg:col-span-1 hover:scale-[1.02] transition-transform"
+      class="w-72 shrink-0 flex flex-col transition-transform hover:scale-[1.02] sm:w-auto sm:shrink sm:col-span-2 lg:col-span-1"
     >
       <div class="card flex h-full min-h-[300px] flex-col gap-4">
         <header class="text-sm font-semibold text-white">{{ projectTitle }}</header>

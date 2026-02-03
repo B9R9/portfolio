@@ -5,8 +5,9 @@
         <RouterLink to="/" class="font-semibold">Baptiste</RouterLink>
 
         <nav class="flex items-center gap-4 text-sm">
-          <a href="/cv-baptiste-riffard.pdf" class="btn-secondary text-sm" download>
-            {{ $t('nav.downloadCv') }}
+          <a href="/cv-baptiste-riffard.pdf" class="btn-secondary px-3 py-2 text-xs sm:text-sm" download>
+            <span class="sm:hidden">CV</span>
+            <span class="hidden sm:inline">{{ $t('nav.downloadCv') }}</span>
           </a>
 
           <a href="/#projects" class="text-white/80 hover:text-white">{{ $t('nav.projects') }}</a>

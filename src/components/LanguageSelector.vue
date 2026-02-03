@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative"
+    class="relative hidden sm:block"
     @mouseenter="isExpanded = true"
     @mouseleave="isExpanded = false"
   >
@@ -29,6 +29,34 @@
       </template>
     </div>
   </div>
+
+  <div class="relative sm:hidden">
+    <button
+      type="button"
+      class="inline-flex h-8 items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/80"
+      :aria-label="$t('languageSelector.aria')"
+      @click="isMobileOpen = !isMobileOpen"
+    >
+      {{ currentLabel }}
+      <span class="text-[10px] text-white/50">▾</span>
+    </button>
+    <div
+      v-if="isMobileOpen"
+      class="absolute right-0 mt-2 w-28 rounded-xl border border-white/10 bg-[#0b0b0b] p-1 shadow-xl"
+    >
+      <button
+        v-for="option in localeOptions"
+        :key="option"
+        type="button"
+        class="flex w-full items-center justify-between rounded-lg px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 hover:bg-white/10 hover:text-white"
+        :class="locale === option ? 'bg-white/15 text-white' : ''"
+        @click="setLocale(option)"
+      >
+        <span>{{ labels[option] }}</span>
+        <span v-if="locale === option" class="text-[10px]">✓</span>
+      </button>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -46,11 +74,13 @@ const labels: Record<(typeof localeOptions)[number], string> = {
 }
 
 const isExpanded = ref(false)
+const isMobileOpen = ref(false)
 
 const currentLabel = computed(() => labels[locale.value as (typeof localeOptions)[number]])
 
 const setLocale = (value: (typeof localeOptions)[number]) => {
   locale.value = value
   isExpanded.value = false
+  isMobileOpen.value = false
 }
 </script>

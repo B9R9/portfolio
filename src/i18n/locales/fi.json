@@ -276,6 +276,31 @@
         "UX:n parantaminen häiritsemättä olemassa olevia käyttäjiä",
         "Tehokas yhteistyö tuote- ja backend‑tiimien kanssa"
       ]
+    },
+    "psgFanClub": {
+      "title": "PSG Fan Club",
+      "tagline": "Yhteisöalusta PSG‑faneille",
+      "problem": "Jalkapallofaneilta puuttuu usein keskitetty ja käyttäjäystävällinen tila seurata joukkuettaan, olla yhteydessä muihin ja osallistua yhteisöaktiviteetteihin.",
+      "solution": "Loin vuorovaikutteisen web‑alustan PSG‑kannattajille keskittyen käyttäjäkokemukseen ja yhteisöön, käyttäen Vue.js:ää ja Claude Code ‑avustusta.",
+      "highlights": [
+        "Kehitetty AI‑agentilla Claude Code",
+        "Moderni ja responsiivinen käyttöliittymä",
+        "Yhteisökeskeinen arkkitehtuuri"
+      ],
+      "description": [
+        "PSG Fan Club on web‑alusta, joka on omistettu Paris Saint‑Germainin kannattajayhteisölle.",
+        "Projekti tutkii mukaansatempaavan fanitilan rakentamista sosiaalisilla ja vuorovaikutteisilla ominaisuuksilla samalla kokeillen tekoälyavusteisia kehitysmahdollisuuksia."
+      ],
+      "learnings": [
+        "Tekoälyavusteinen kehitys Claude Coden kanssa",
+        "Mukaansatempaavien yhteisökäyttöliittymien rakentaminen",
+        "Käyttäjäkeskeinen alusta‑arkkitehtuuri"
+      ],
+      "roadmap": [
+        "Luo ennustepeli jäsenille",
+        "Lisää pelaajien tilastot ja uutiset",
+        "Lisää chat jäsenille"
+      ]
     }
   },
   "contact": {

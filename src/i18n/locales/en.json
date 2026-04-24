@@ -277,6 +277,31 @@
         "Improving UX without disrupting existing users",
         "Collaborating effectively with product and backend teams"
       ]
+    },
+    "psgFanClub": {
+      "title": "PSG Fan Club",
+      "tagline": "A community platform for PSG fans",
+      "problem": "Football fans often lack a centralized and user-friendly space to follow their team, connect with others, and participate in community activities.",
+      "solution": "I created an interactive web platform for PSG supporters, focusing on user experience and community engagement, using Vue.js with Claude Code assistance.",
+      "highlights": [
+        "Developed with AI Agent Claude Code",
+        "Modern and responsive interface",
+        "Community-focused architecture"
+      ],
+      "description": [
+        "PSG Fan Club is a web platform dedicated to the Paris Saint-Germain supporters community.",
+        "The project explores building an engaging fan space with social and interactive features, while experimenting with AI-assisted development capabilities."
+      ],
+      "learnings": [
+        "AI-assisted development with Claude Code",
+        "Building engaging community interfaces",
+        "User-centric platform architecture"
+      ],
+      "roadmap": [
+        "Create a prediction game for members",
+        "Add player stats and news",
+        "Add a chat for members"
+      ]
     }
   },
   "contact": {

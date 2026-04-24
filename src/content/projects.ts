@@ -376,4 +376,49 @@ export const PROJECTS: Project[] = [
     demoUrl: '',
     downloadUrl: '',
   },
+  {
+    slug: 'psg-fan-club',
+    title: 'PSG Fan Club',
+    titleKey: 'projectsData.psgFanClub.title',
+    tagline: 'Une plateforme pour les fans du PSG.',
+    taglineKey: 'projectsData.psgFanClub.tagline',
+    type: 'personal',
+    tags: ['Web', 'Frontend', 'UI'],
+    stack: ['Vue', 'Claude Code'],
+
+    problem: '',
+    problemKey: 'projectsData.psgFanClub.problem',
+
+    solution: '',
+    solutionKey: 'projectsData.psgFanClub.solution',
+
+    highlights: [
+      'Build with IA Agent Claude Code',
+      'Navigation claire et structurée',
+      'Composants UI réutilisables',
+    ],
+    highlightsKey: 'projectsData.psgFanClub.highlights',
+
+    description: [''],
+    descriptionKey: 'projectsData.psgFanClub.description',
+
+    learnings: [
+      'Prise en main approfondie de Quasar',
+      'Structuration d’un dashboard modulaire',
+      'Gestion des layouts et composants réutilisables',
+    ],
+    learningsKey: 'projectsData.psgFanClub.learnings',
+
+    roadmap: [
+      'Create a pronotic game for members',
+      'Add players stats and news',
+      'Add a chat for members',
+    ],
+    roadmapKey: 'projectsData.psgFanClub.roadmap',
+
+    imageUrl: ['/images/projects/psg/psg.jpg'],
+    repoUrl: 'https://github.com/B9R9/psg-fan-club',
+    demoUrl: 'https://psg-fan-club-yoph.vercel.app/',
+    downloadUrl: 'https://github.com/B9R9/psg-fan-club/archive/refs/heads/main.zip',
+  },
 ]

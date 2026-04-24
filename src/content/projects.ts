@@ -403,9 +403,9 @@ export const PROJECTS: Project[] = [
     descriptionKey: 'projectsData.psgFanClub.description',
 
     learnings: [
-      'Prise en main approfondie de Quasar',
-      'Structuration d’un dashboard modulaire',
-      'Gestion des layouts et composants réutilisables',
+      'Build with IA Agent Claude Code',
+      'Architecture d’une application front-end avec un agent IA',
+      'Ordernancement et structuration des composants dans une application front-end à moyenne échelle',
     ],
     learningsKey: 'projectsData.psgFanClub.learnings',
 

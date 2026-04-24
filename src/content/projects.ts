@@ -416,7 +416,7 @@ export const PROJECTS: Project[] = [
     ],
     roadmapKey: 'projectsData.psgFanClub.roadmap',
 
-    imageUrl: ['/images/projects/psg/psg.jpg'],
+    imageUrl: ['/images/projects/psg/psg.png'],
     repoUrl: 'https://github.com/B9R9/psg-fan-club',
     demoUrl: 'https://psg-fan-club-yoph.vercel.app/',
     downloadUrl: 'https://github.com/B9R9/psg-fan-club/archive/refs/heads/main.zip',
